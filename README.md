@@ -1,78 +1,58 @@
-Front-End UI/UX Projects
+Front-End UI/UX Project: Nutrition Nutrition Label 
 
-Welcome to my repository for Front-End UI/UX projects! 
+Overview:
 
-This repository showcases a collection of my work in front-end development and user experience design. Each project highlights different aspects of web design, user interaction, and front-end technologies.
-
-Projects:
-
-1. Customer Satisfaction Form:
-   
-A responsive web form designed to collect feedback from users about their satisfaction with a product or service. 
-This project demonstrates form handling, user interface design, and responsive design principles.
+Welcome to the Nutrition Label Project! This project is designed to dynamically calculate and display nutrition facts based on user input. It provides an interactive web interface where users can adjust serving sizes and see how the nutritional information changes accordingly.
 
 Features:
 
-User-friendly form layout
-Input validation
-Responsive design for various screen sizes.
+Dynamic Calculation: Automatically updates nutritional values based on serving size input.
 
+Responsive Design: Designed to be user-friendly and accessible on various devices.
 
-Technologies Used:
+Simple Interface: Easy-to-use with clear instructions for input and result display.
 
-HTML
-CSS
-JavaScript
-How to View:
+Project Structure:
 
-To clone the repository or download the project files.
-Open the index.html file in a web browser to view the form.
+index.html: The main HTML file containing the structure of the web page.
 
-2. Nutrition Label
-   
-An interactive nutrition label that allows users to input serving sizes and dynamically calculates and displays nutritional information. This project demonstrates JavaScript for interactive functionality and front-end design for presenting data.
+styles.css: The CSS file for styling the page and ensuring a responsive layout.
 
-Features:
-
-Dynamic nutritional calculations
-User input for serving size
-Responsive design
-Technologies Used:
-
-HTML
-CSS
-JavaScript
-
-How to View:
-
-Clone the repository or download the project files.
-Open the index.html file in a web browser to view the nutrition label.
+script.js: The JavaScript file that handles the dynamic calculation and updates the nutritional information.
 
 Getting Started:
 
-To get started with any of these projects:
-
 Clone the Repository:
 
-git clone https://github.com/yourusername/Front-End-UI-UX-Projects.git
+git clone https://github.com/yourusername/Nutrition-Label.git
 
 Navigate to the Project Directory:
 
-cd Front-End-UI-UX-Projects
-Open the Project Files:
+cd Nutrition-Label
+Open index.html in Your Browser:
 
-Use a code editor to view or modify the files.
-Open index.html in a web browser to view the projects.
+You can open index.html directly in your web browser to view the project in action.
 
-Contribution:
-If you would like to contribute to these projects, feel free to fork the repository and submit a pull request. 
+Usage:
 
-Contributions are always welcome!
+Input Serving Size:
+
+Enter the desired serving size in the input field.
+
+View Updated Nutrition Facts:
+
+The nutritional values will automatically update based on the serving size you’ve entered.
+
+Contributing:
+
+If you have suggestions or improvements for this project, feel free to contribute! Fork the repository, make your changes, and submit a pull request.
 
 License:
 
-This repository is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Contact:
 
 For any questions or feedback, please contact me on LinkedIn.
+
+
