@@ -1,47 +1,11 @@
-Front-End UI/UX Projects
+Interactive Cafe Menu:
 
-Welcome to my repository for Front-End UI/UX projects! 
+Welcome to the Interactive Cafe Menu project repository!
 
-This repository showcases a collection of my work in front-end development and user experience design. Each project highlights different aspects of web design, user interaction, and front-end technologies.
+This project features an interactive cafe menu that allows users to explore different food and drink options, view descriptions, and see prices. It demonstrates the use of modern web technologies to create a user-friendly and dynamic menu experience.
 
-Projects:
+Project Overview:
 
-1. Customer Satisfaction Form:
-   
-A responsive web form designed to collect feedback from users about their satisfaction with a product or service. 
-This project demonstrates form handling, user interface design, and responsive design principles.
-
-Features:
-
-User-friendly form layout
-Input validation
-Responsive design for various screen sizes.
-
-
-Technologies Used:
-
-HTML
-CSS
-JavaScript
-How to View:
-
-2. Nutrition Label
-   
-An interactive nutrition label that allows users to input serving sizes and dynamically calculates and displays nutritional information. This project demonstrates JavaScript for interactive functionality and front-end design for presenting data.
-
-Features:
-
-Dynamic nutritional calculations
-User input for serving size
-Responsive design
-Technologies Used:
-
-HTML
-CSS
-JavaScript
-
-3. Interactive Cafe Menu
-   
 The Interactive Cafe Menu is designed to enhance user interaction with a visually appealing and functional menu. Users can browse through various categories, view detailed descriptions, and check prices, all in a responsive design that works across different devices.
 
 Features:
@@ -51,37 +15,30 @@ Dynamic Item Display: Click on items to view detailed descriptions and prices.
 Responsive Design: Optimized for a seamless experience on desktops, tablets, and smartphones.
 
 Technologies Used:
+HTML: For structuring the content.
+CSS: For styling and layout.
+JavaScript: For interactivity and dynamic content updates.
 
-HTML
-CSS
-JavaScript
-
-
-Getting Started:
-
-To get started with any of these projects:
+How to View:
 
 Clone the Repository:
 
-git clone https://github.com/yourusername/Front-End-UI-UX-Projects.git
-
+git clone https://github.com/yourusername/Interactive-Cafe-Menu.git
 Navigate to the Project Directory:
 
-cd Front-End-UI-UX-Projects
-Open the Project Files:
+cd Interactive-Cafe-Menu
+Open the Project Files
 
-Use a code editor to view or modify the files.
-Open index.html in a web browser to view the projects.
+Use a code editor to view or modify the files. Open index.html in a web browser to view the interactive menu.
+
+Getting Started:
+To get started with the Interactive Cafe Menu project:
 
 Contribution:
-If you would like to contribute to these projects, feel free to fork the repository and submit a pull request. 
-
-Contributions are always welcome!
+If you would like to contribute to this project, please fork the repository and submit a pull request. Contributions are encouraged and appreciated!
 
 License:
-
-This repository is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Contact:
-
-For any questions or feedback, please contact me on LinkedIn.
+For any questions or feedback, please reach out to me on LinkedIn.
