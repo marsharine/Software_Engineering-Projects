@@ -25,9 +25,6 @@ CSS
 JavaScript
 How to View:
 
-To clone the repository or download the project files.
-Open the index.html file in a web browser to view the form.
-
 2. Nutrition Label
    
 An interactive nutrition label that allows users to input serving sizes and dynamically calculates and displays nutritional information. This project demonstrates JavaScript for interactive functionality and front-end design for presenting data.
@@ -43,10 +40,22 @@ HTML
 CSS
 JavaScript
 
-How to View:
+3. Interactive Cafe Menu
+   
+The Interactive Cafe Menu is designed to enhance user interaction with a visually appealing and functional menu. Users can browse through various categories, view detailed descriptions, and check prices, all in a responsive design that works across different devices.
 
-Clone the repository or download the project files.
-Open the index.html file in a web browser to view the nutrition label.
+Features:
+
+Interactive Menu Categories: Browse through categories such as Breakfast, Lunch, Dinner, and Drinks.
+Dynamic Item Display: Click on items to view detailed descriptions and prices.
+Responsive Design: Optimized for a seamless experience on desktops, tablets, and smartphones.
+
+Technologies Used:
+
+HTML
+CSS
+JavaScript
+
 
 Getting Started:
 
