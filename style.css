@@ -1,0 +1,107 @@
+body {
+  background-image: url('https://github.com/user-attachments/assets/93e3be59-1ba1-4651-8ebb-b82d6fb1e0e1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3; /* Fallback background color */
+  overflow: auto; /* Ensure scroll bars appear */
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.welcome-section {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* Dark chocolate brown */
+  color:#3e1f1b;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 30%; /* Same width as the menu */
+}
+
+.logo {
+  width: 100px;
+  margin-right: 20px;
+  background-color: #3e1f1b; /* Dark chocolate brown */
+}
+
+.welcome-title {
+  font-size: 36px;
+  font-family: 'Cursive', sans-serif;
+  margin: 0;
+}
+
+.menu-header {
+  width: 30%; /* Same width as the menu */
+  background-color: rgba(210, 180, 140, 0.9); /* Same background as menu items */
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.menu-title {
+  margin: 0;
+  font-size: 64px;
+  text-align: center;
+}
+
+.menu {
+  width: 50%;
+  background-color: rgba(210, 180, 140, 0.9);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+h2 {
+  color: #765941;
+  border-bottom: 2px solid #d3a87c;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  cursor: pointer; /* Indicates interactivity */
+}
+
+.hidden {
+  display: none; /* Hide by default */
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #765941;
+}
+
+.interactive {
+  cursor: pointer; /* Indicates interactivity */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  color: #543e28;
+}
+
+li {
+  margin-bottom: 5px;
+}
