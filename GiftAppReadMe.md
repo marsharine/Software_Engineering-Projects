@@ -25,9 +25,7 @@
 ## **Getting Started**
 
 **Clone the Repository:**  
-bash  
-Copy code  
-`git clone https://github.com/your-username/irememboryou-gift-app.git`  
+ `git clone https://github.com/your-username/irememboryou-gift-app.git`  
 `cd irememberyou-gift-app`
 
 1. **Install Dependencies:** For the front-end:
