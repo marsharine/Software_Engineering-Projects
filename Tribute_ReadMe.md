@@ -22,18 +22,14 @@ This website provides a detailed biography, quotes, images, and a timeline of he
 ## **Features**
 
 * **Responsive Design:** The website is fully responsive and adjusts to different screen sizes, ensuring an optimal viewing experience on desktops, tablets, and mobile devices.  
-* **Timeline of Ada’s Life:** A detailed, interactive timeline showcasing key events and milestones from Ada Lovelace’s life.  
 * **Quotes Section:** Inspiring quotes from Ada Lovelace are highlighted throughout the site.  
 * **Elegant Design:** The layout and color scheme are designed to reflect Ada Lovelace’s era while maintaining a modern, clean look.  
-* **Interactive Elements:** Hover effects, buttons, and other interactive elements to enhance user experience.
 
 ## **Technologies Used**
 
 * **HTML5:** For structuring the content on the webpage.  
 * **CSS3:** For styling the website, including the layout, typography, and responsive design.  
 * **JavaScript:** To add interactivity and dynamic elements to the site.  
-* **Bootstrap (optional):** For faster, more responsive design implementation.  
-* **FontAwesome:** Icons used throughout the website.
 
 ## **Installation**
 
