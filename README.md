@@ -2,47 +2,15 @@ Front-End UI/UX Projects
 
 Welcome to my repository for Front-End and Back-End projects!
 
-This repository showcases a collection of my work in front-end development and user experience design. Each project highlights different aspects of web design, user interaction, and front-end technologies. I am also working on projects which showcasing Back-end development skills So these projects will increase as time progresses.
+This repository showcases a collection of my work. Each project highlights different aspects of  front-end and back-end technologies. These quantity of projects will increase as time progresses.
 
-Projects:
+Coding Languages:
 
-1. Customer Satisfaction Form:
-
-A responsive web form designed to collect feedback from users about their satisfaction with a product or service. This project demonstrates form handling, user interface design, and responsive design principles.
-
-Features:
-
-User-friendly form layout Input validation Responsive design for various screen sizes.
-
-Technologies Used:
-
-HTML CSS JavaScript How to View:
-
-2. Nutrition Label:
-
-An interactive nutrition label that allows users to input serving sizes and dynamically calculates and displays nutritional information. This project demonstrates JavaScript for interactive functionality and front-end design for presenting data.
-
-Features:
-
-Dynamic nutritional calculations User input for serving size Responsive design Technologies Used:
-
-HTML CSS JavaScript
-
-3. Interactive Cafe Menu:
-
-The Interactive Cafe Menu is designed to enhance user interaction with a visually appealing and functional menu. Users can browse through various categories, view detailed descriptions, and check prices, all in a responsive design that works across different devices.
-
-Features:
-
-Interactive Menu Categories: Browse through categories such as Breakfast, Lunch, Dinner, and Drinks. Dynamic Item Display: Click on items to view detailed descriptions and prices. Responsive Design: Optimized for a seamless experience on desktops, tablets, and smartphones.
-
-Technologies Used:
-
-HTML CSS JavaScript
+HTML, CSS, JavaScript, React, Python, Java
 
 Getting Started:
 
-To get started with any of these projects:
+To get started with any of my projects:
 
 Clone the Repository:
 
