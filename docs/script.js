@@ -1,24 +1,36 @@
-document.getElementById('submit').addEventListener('click', function() {
-    const quizAnswers = {
-        q1: 'b',
-        q2: 'b',
-        q3: 'a',
-        q4: 'b',
-        q5: 'b',
-        q6: 'b',
-        q7: 'b'
-    };
+document.addEventListener("DOMContentLoaded", function() {
+    const drinksList = [
+        { name: "Espresso", price: "$2.99" },
+        { name: "Latte", price: "$3.99" },
+        { name: "Cappuccino", price: "$3.49" }
+    ];
+    
+    const snacksList = [
+        { name: "Croissant", price: "$2.49" },
+        { name: "Muffin", price: "$2.99" },
+        { name: "Bagel with Cream Cheese", price: "$3.49" }
+    ];
 
-    let score = 0;
-    const form = document.getElementById('quiz-form');
-    const formData = new FormData(form);
-    const resultsContainer = document.getElementById('results');
+    const drinksHeader = document.getElementById("drinks-header");
+    const snacksHeader = document.getElementById("snacks-header");
+    const drinksListElement = document.getElementById("drinks-list");
+    const snacksListElement = document.getElementById("snacks-list");
 
-    formData.forEach((value, key) => {
-        if (value === quizAnswers[key]) {
-            score++;
-        }
+    drinksHeader.addEventListener("click", function() {
+        toggleList(drinksListElement, drinksList, "Drinks");
     });
 
-    resultsContainer.textContent = `You got ${score} out of 7 correct!`;
+    snacksHeader.addEventListener("click", function() {
+        toggleList(snacksListElement, snacksList, "Snacks");
+    });
+
+    function toggleList(element, items, title) {
+        if (element.classList.contains("hidden")) {
+            element.classList.remove("hidden");
+            element.innerHTML = items.map(item => `<li>${item.name} - ${item.price}</li>`).join("");
+        } else {
+            element.classList.add("hidden");
+            element.innerHTML = "";
+        }
+    }
 });
