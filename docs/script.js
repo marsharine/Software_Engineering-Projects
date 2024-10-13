@@ -1,36 +1,25 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const drinksList = [
-        { name: "Espresso", price: "$2.99" },
-        { name: "Latte", price: "$3.99" },
-        { name: "Cappuccino", price: "$3.49" }
-    ];
+function checkAnswers() {
+    const quizForm = document.forms["quizForm"];
     
-    const snacksList = [
-        { name: "Croissant", price: "$2.49" },
-        { name: "Muffin", price: "$2.99" },
-        { name: "Bagel with Cream Cheese", price: "$3.49" }
-    ];
-
-    const drinksHeader = document.getElementById("drinks-header");
-    const snacksHeader = document.getElementById("snacks-header");
-    const drinksListElement = document.getElementById("drinks-list");
-    const snacksListElement = document.getElementById("snacks-list");
-
-    drinksHeader.addEventListener("click", function() {
-        toggleList(drinksListElement, drinksList, "Drinks");
-    });
-
-    snacksHeader.addEventListener("click", function() {
-        toggleList(snacksListElement, snacksList, "Snacks");
-    });
-
-    function toggleList(element, items, title) {
-        if (element.classList.contains("hidden")) {
-            element.classList.remove("hidden");
-            element.innerHTML = items.map(item => `<li>${item.name} - ${item.price}</li>`).join("");
-        } else {
-            element.classList.add("hidden");
-            element.innerHTML = "";
-        }
+    let score = 0;
+    
+    // Correct answers
+    const answers = {
+      q1: "const",
+      q2: "All of the above",
+      q3: "if (x == 5) {}",
+      q4: "myFunction()",
+      q5: "document.getElementById()"
+    };
+    
+    // Loop through the answers and check if the selected answer is correct
+    for (let question in answers) {
+      if (quizForm[question].value === answers[question]) {
+        score++;
+      }
     }
-});
+    
+    // Display the result
+    const result = document.getElementById("result");
+    result.textContent = `You got ${score} out of 5 correct!`;
+  }

@@ -3,31 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coconut Cafe Menu</title>
+  <title>JavaScript Concepts Quiz</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="header-container">
-    <div class="welcome-section">
-      <img src="https://github.com/user-attachments/assets/bbd9bda3-7e33-43e1-a2da-1ae98d1dbb97" alt="Cafe Logo" class="logo">
-      <h1 class="welcome-title">Welcome to Coconut Cafe</h1>
+  <h1>JavaScript Concepts Quiz 1</h1>
+  <form id="quizForm">
+    <!-- Question 1 -->
+    <div class="question">
+      <label>1. What keyword is used to declare a constant in JavaScript?</label><br>
+      <input type="radio" name="q1" value="var"> var<br>
+      <input type="radio" name="q1" value="let"> let<br>
+      <input type="radio" name="q1" value="const"> const<br>
     </div>
-    <div class="menu-header">
-      <h2 class="menu-title">Cafe Menu</h2>
+
+    <!-- Question 2 -->
+    <div class="question">
+      <label>2. Which of the following is a JavaScript data type?</label><br>
+      <input type="radio" name="q2" value="Array"> Array<br>
+      <input type="radio" name="q2" value="Number"> Number<br>
+      <input type="radio" name="q2" value="String"> String<br>
+      <input type="radio" name="q2" value="All of the above"> All of the above<br>
     </div>
-  </div>
 
-  <div class="menu">
-    <h2 id="drinks-header" class="interactive">Drinks</h2>
-    <ul id="drinks-list" class="hidden">
-      <!-- Drinks will be populated here -->
-    </ul>
+    <!-- Question 3 -->
+    <div class="question">
+      <label>3. How do you write an `if` statement in JavaScript?</label><br>
+      <input type="radio" name="q3" value="if (x == 5) {}"> if (x == 5) {}<br>
+      <input type="radio" name="q3" value="if x == 5 then {}"> if x == 5 then {}<br>
+      <input type="radio" name="q3" value="if x = 5 {}"> if x = 5 {}<br>
+    </div>
 
-    <h2 id="snacks-header" class="interactive">Snacks</h2>
-    <ul id="snacks-list" class="hidden">
-      <!-- Snacks will be populated here -->
-    </ul>
-  </div>
+    <!-- Question 4 -->
+    <div class="question">
+      <label>4. How do you call a function named `myFunction`?</label><br>
+      <input type="radio" name="q4" value="call myFunction()"> call myFunction()<br>
+      <input type="radio" name="q4" value="myFunction()"> myFunction()<br>
+      <input type="radio" name="q4" value="run myFunction()"> run myFunction()<br>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question">
+      <label>5. Which method can be used to manipulate the HTML DOM?</label><br>
+      <input type="radio" name="q5" value="document.getElementById()"> document.getElementById()<br>
+      <input type="radio" name="q5" value="console.log()"> console.log()<br>
+      <input type="radio" name="q5" value="alert()"> alert()<br>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+
+  <p id="result"></p>
+
+  <script src="script.js"></script>
 </body>
 </html>
