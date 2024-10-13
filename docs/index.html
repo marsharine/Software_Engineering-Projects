@@ -1,60 +1,85 @@
+<!-- Customer Satisfaction Survey Form →
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript Concepts Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <!-- Link to CSS -->
+<link rel="stylesheet" href="main_styles.css">
+
+<!-- Link to JavaScript -->
+<script src="app.js" defer></script>   <meta name="viewport" content="width=device=width, initial-scale=1.0">
+
+    <title>Survey Form</title>
 </head>
 <body>
-  <h1>JavaScript Concepts Quiz 1</h1>
-  <form id="quizForm">
-    <!-- Question 1 -->
-    <div class="question">
-      <label>1. What keyword is used to declare a constant in JavaScript?</label><br>
-      <input type="radio" name="q1" value="var"> var<br>
-      <input type="radio" name="q1" value="let"> let<br>
-      <input type="radio" name="q1" value="const"> const<br>
-    </div>
+  <!--Page Title-->
+  <h1 id="title">Customer Satisfaction Survey</h1>
 
-    <!-- Question 2 -->
-    <div class="question">
-      <label>2. Which of the following is a JavaScript data type?</label><br>
-      <input type="radio" name="q2" value="Array"> Array<br>
-      <input type="radio" name="q2" value="Number"> Number<br>
-      <input type="radio" name="q2" value="String"> String<br>
-      <input type="radio" name="q2" value="All of the above"> All of the above<br>
-    </div>
+  <!--Short Explanation-->
+  <p id="description"> Please fill out the survey below to help us improve our services.</p>
 
-    <!-- Question 3 -->
-    <div class="question">
-      <label>3. How do you write an `if` statement in JavaScript?</label><br>
-      <input type="radio" name="q3" value="if (x == 5) {}"> if (x == 5) {}<br>
-      <input type="radio" name="q3" value="if x == 5 then {}"> if x == 5 then {}<br>
-      <input type="radio" name="q3" value="if x = 5 {}"> if x = 5 {}<br>
-    </div>
+  <!--Form Element-->
+  <form id="survey-form">
+  <!--Name input-->
+  <label id="name-label" for="name">Enter your name:</label>
+  <input type="text" id="name" name="name" placeholder="e.g.,John Doe" required>
 
-    <!-- Question 4 -->
-    <div class="question">
-      <label>4. How do you call a function named `myFunction`?</label><br>
-      <input type="radio" name="q4" value="call myFunction()"> call myFunction()<br>
-      <input type="radio" name="q4" value="myFunction()"> myFunction()<br>
-      <input type="radio" name="q4" value="run myFunction()"> run myFunction()<br>
-    </div>
+  <!--Email input-->
+  <label id="email-label" for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" placeholder="e.g., john@example com" requiered>
 
-    <!-- Question 5 -->
-    <div class="question">
-      <label>5. Which method can be used to manipulate the HTML DOM?</label><br>
-      <input type="radio" name="q5" value="document.getElementById()"> document.getElementById()<br>
-      <input type="radio" name="q5" value="console.log()"> console.log()<br>
-      <input type="radio" name="q5" value="alert()"> alert()<br>
-    </div>
+  <!--Number Input-->
+  <label id="number-label" for="number">Enter a number between 1 and 10:</label>
+  <input type="number" id="number" name="number" min="1"
+  max="10" placeholder="e.g., 5" required>
+ 
+  <!--Dropdown Menu-->
+  <label id="dropdown-label" for ="dropdown">Choose an option:</label>
+  <select id="dropdown" name="dropdown" requiered>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  </select>
 
-    <button type="button" onclick="checkAnswers()">Submit</button>
+  <!--Radio Buttons-->
+  <fieldset>
+  <legend>Select your preferenced:</legend>
+  <label>
+  <input type="radio" name="preference" value="option1" required>
+  Option 1
+  </label>
+  <label>
+  <input type="radio" name="preference" value="option2">
+  Option 2
+  </label>
+  </fieldset>
+
+  <!--Checkboxes-->
+  <fieldset>
+  <legend>Select your interensts:</legend>
+  <label>
+  <input type="checkbox" name="interests" value="coding">
+  Coding
+  </label>
+  <input type="checkbox" name="intersts" value="design">
+  Design
+  </label>
+  <label>
+  <input type="checkbox" name="interests" value="writing">
+  Writing
+  </label>
+  <label>
+  <input type="checkbox" name="interests" value="gaming">
+  Gaming
+  </label>
+  </fieldset>
+
+  <!--Textarea-->
+  <label for="comments">Additional Comments:</label>
+  <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+  <!--Submit button-->
+  <button type="submit" id="submit">Submit</button>
   </form>
-
-  <p id="result"></p>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  </html>
