@@ -1,85 +1,76 @@
-<!-- Customer Satisfaction Survey Form →
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
-    <!-- Link to CSS -->
-<link rel="stylesheet" href="main_styles.css">
-
-<!-- Link to JavaScript -->
-<script src="app.js" defer></script>   <meta name="viewport" content="width=device=width, initial-scale=1.0">
-
-    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!--Page Title-->
-  <h1 id="title">Customer Satisfaction Survey</h1>
+    <div class="quiz-container">
+        <h1>CSS Selectors Quiz</h1>
+        <form id="quiz-form">
+            <div class="question-container">
+                <p>1. What selector would you use to style all &lt;p&gt; elements inside a &lt;div&gt;?</p>
+                <label><input type="radio" name="q1" value="a"> a: div + p</label><br>
+                <label><input type="radio" name="q1" value="b"> b: div p</label><br>
+                <label><input type="radio" name="q1" value="c"> c: div > p</label><br>
+                <label><input type="radio" name="q1" value="d"> d: p div</label>
+            </div>
 
-  <!--Short Explanation-->
-  <p id="description"> Please fill out the survey below to help us improve our services.</p>
+            <div class="question-container">
+                <p>2. Which of the following targets all elements with the class name <code>highlight</code>?</p>
+                <label><input type="radio" name="q2" value="a"> a: #highlight</label><br>
+                <label><input type="radio" name="q2" value="b"> b: .highlight</label><br>
+                <label><input type="radio" name="q2" value="c"> c: highlight</label><br>
+                <label><input type="radio" name="q2" value="d"> d: *highlight</label>
+            </div>
 
-  <!--Form Element-->
-  <form id="survey-form">
-  <!--Name input-->
-  <label id="name-label" for="name">Enter your name:</label>
-  <input type="text" id="name" name="name" placeholder="e.g.,John Doe" required>
+            <div class="question-container">
+                <p>3. How would you select the first child &lt;li&gt; element in a &lt;ul&gt;?</p>
+                <label><input type="radio" name="q3" value="a"> a: ul li:first-child</label><br>
+                <label><input type="radio" name="q3" value="b"> b: ul li:first</label><br>
+                <label><input type="radio" name="q3" value="c"> c: ul > li:nth-child(2)</label><br>
+                <label><input type="radio" name="q3" value="d"> d: ul li:child(1)</label>
+            </div>
 
-  <!--Email input-->
-  <label id="email-label" for="email">Enter your email:</label>
-  <input type="email" id="email" name="email" placeholder="e.g., john@example com" requiered>
+            <div class="question-container">
+                <p>4. Which selector would target the element with id='header'?</p>
+                <label><input type="radio" name="q4" value="a"> a: header</label><br>
+                <label><input type="radio" name="q4" value="b"> b: #header</label><br>
+                <label><input type="radio" name="q4" value="c"> c: .header</label><br>
+                <label><input type="radio" name="q4" value="d"> d: :header</label>
+            </div>
 
-  <!--Number Input-->
-  <label id="number-label" for="number">Enter a number between 1 and 10:</label>
-  <input type="number" id="number" name="number" min="1"
-  max="10" placeholder="e.g., 5" required>
- 
-  <!--Dropdown Menu-->
-  <label id="dropdown-label" for ="dropdown">Choose an option:</label>
-  <select id="dropdown" name="dropdown" requiered>
-  <option value="option1">Option 1</option>
-  <option value="option2">Option 2</option>
-  </select>
+            <div class="question-container">
+                <p>5. What selector would you use to apply styles to an &lt;input&gt; element of type text?</p>
+                <label><input type="radio" name="q5" value="a"> a: [text]</label><br>
+                <label><input type="radio" name="q5" value="b"> b: input[type='text']</label><br>
+                <label><input type="radio" name="q5" value="c"> c: input[text]</label><br>
+                <label><input type="radio" name="q5" value="d"> d: [input='text']</label>
+            </div>
 
-  <!--Radio Buttons-->
-  <fieldset>
-  <legend>Select your preferenced:</legend>
-  <label>
-  <input type="radio" name="preference" value="option1" required>
-  Option 1
-  </label>
-  <label>
-  <input type="radio" name="preference" value="option2">
-  Option 2
-  </label>
-  </fieldset>
+            <div class="question-container">
+                <p>6. Which of the following would style &lt;p&gt; elements that follow an &lt;h2&gt; element?</p>
+                <label><input type="radio" name="q6" value="a"> a: h2 > p</label><br>
+                <label><input type="radio" name="q6" value="b"> b: h2 + p</label><br>
+                <label><input type="radio" name="q6" value="c"> c: h2 ~ p</label><br>
+                <label><input type="radio" name="q6" value="d"> d: p h2</label>
+            </div>
 
-  <!--Checkboxes-->
-  <fieldset>
-  <legend>Select your interensts:</legend>
-  <label>
-  <input type="checkbox" name="interests" value="coding">
-  Coding
-  </label>
-  <input type="checkbox" name="intersts" value="design">
-  Design
-  </label>
-  <label>
-  <input type="checkbox" name="interests" value="writing">
-  Writing
-  </label>
-  <label>
-  <input type="checkbox" name="interests" value="gaming">
-  Gaming
-  </label>
-  </fieldset>
+            <div class="question-container">
+                <p>7. Which pseudo-class targets the &lt;a&gt; element when hovered over by a mouse?</p>
+                <label><input type="radio" name="q7" value="a"> a: a:click</label><br>
+                <label><input type="radio" name="q7" value="b"> b: a:hover</label><br>
+                <label><input type="radio" name="q7" value="c"> c: a:active</label><br>
+                <label><input type="radio" name="q7" value="d"> d: a:focus</label>
+            </div>
 
-  <!--Textarea-->
-  <label for="comments">Additional Comments:</label>
-  <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+            <button type="button" id="submit">Submit Quiz</button>
+        </form>
+        <div id="results"></div>
+    </div>
 
-  <!--Submit button-->
-  <button type="submit" id="submit">Submit</button>
-  </form>
-  </html>
+    <script src="script.js"></script>
+</body>
+</html>

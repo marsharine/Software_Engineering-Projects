@@ -1,25 +1,24 @@
-function checkAnswers() {
-    const quizForm = document.forms["quizForm"];
-    
-    let score = 0;
-    
-    // Correct answers
-    const answers = {
-      q1: "const",
-      q2: "All of the above",
-      q3: "if (x == 5) {}",
-      q4: "myFunction()",
-      q5: "document.getElementById()"
+document.getElementById('submit').addEventListener('click', function() {
+    const quizAnswers = {
+        q1: 'b',
+        q2: 'b',
+        q3: 'a',
+        q4: 'b',
+        q5: 'b',
+        q6: 'b',
+        q7: 'b'
     };
-    
-    // Loop through the answers and check if the selected answer is correct
-    for (let question in answers) {
-      if (quizForm[question].value === answers[question]) {
-        score++;
-      }
-    }
-    
-    // Display the result
-    const result = document.getElementById("result");
-    result.textContent = `You got ${score} out of 5 correct!`;
-  }
+
+    let score = 0;
+    const form = document.getElementById('quiz-form');
+    const formData = new FormData(form);
+    const resultsContainer = document.getElementById('results');
+
+    formData.forEach((value, key) => {
+        if (value === quizAnswers[key]) {
+            score++;
+        }
+    });
+
+    resultsContainer.textContent = `You got ${score} out of 7 correct!`;
+});
