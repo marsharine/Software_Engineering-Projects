@@ -1,38 +1,43 @@
-// script.js
+// Base values for a 55g serving
+const baseNutrition = {
+  calories: 230,
+  totalFat: 8,
+  satFat: 1,
+  cholesterol: 0,
+  sodium: 160,
+  carbohydrate: 37,
+  fiber: 4,
+  sugars: 12,
+  addedSugars: 10,
+  protein: 3
+};
 
-// script.js
+// Function to update the nutritional facts
+function updateNutrition() {
+  const servingSizeInput = document.getElementById('servingSizeInput');
+  const servingSize = parseFloat(servingSizeInput.value);
 
-// Select all anchor links within the side menu
-document.querySelectorAll('.side-menu a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent the default anchor click behavior
-        
-        // Get the target section ID from the href attribute
-        const targetId = this.getAttribute('href');
+  if (isNaN(servingSize) || servingSize <= 0) {
+      // Handle invalid input
+      alert('Please enter a valid serving size.');
+      return;
+  }
 
-        // Check if the target ID is valid
-        if (targetId) {
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                // Adjust scrolling offset to account for fixed title bar
-                const offset = document.querySelector('.title-bar').offsetHeight; // Get height of title bar
+  // Calculate new values based on serving size (assuming the base size is 55g)
+  const baseServingSize = 55;  // Base size in grams
+  const scaleFactor = servingSize / baseServingSize;
 
-                // Calculate the target position, considering the offset
-                const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-                const offsetPosition = elementPosition - offset;
+  document.getElementById('calories').textContent = Math.round(baseNutrition.calories * scaleFactor);
+  document.getElementById('totalFat').textContent = Math.round(baseNutrition.totalFat * scaleFactor) + 'g';
+  document.getElementById('satFat').textContent = Math.round(baseNutrition.satFat * scaleFactor) + 'g';
+  document.getElementById('cholesterol').textContent = Math.round(baseNutrition.cholesterol * scaleFactor) + 'mg';
+  document.getElementById('sodium').textContent = Math.round(baseNutrition.sodium * scaleFactor) + 'mg';
+  document.getElementById('carbohydrate').textContent = Math.round(baseNutrition.carbohydrate * scaleFactor) + 'g';
+  document.getElementById('fiber').textContent = Math.round(baseNutrition.fiber * scaleFactor) + 'g';
+  document.getElementById('sugars').textContent = Math.round(baseNutrition.sugars * scaleFactor) + 'g';
+  document.getElementById('addedSugars').textContent = Math.round(baseNutrition.addedSugars * scaleFactor) + 'g';
+  document.getElementById('protein').textContent = Math.round(baseNutrition.protein * scaleFactor) + 'g';
+}
 
-                // Smoothly scroll to the target element, considering the offset
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            } else {
-                console.error(`Target element with ID "${targetId}" not found.`);
-                // Optional: Scroll to the top of the page if target not found
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-        } else {
-            console.error(`No href attribute found for this anchor.`);
-        }
-    });
-});
+// Attach the updateNutrition function to input change event
+document.getElementById('servingSizeInput').addEventListener('input', updateNutrition);
