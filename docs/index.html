@@ -1,60 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript Concepts Quiz</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>JavaScript Concepts Quiz 1</h1>
-  <form id="quizForm">
-    <!-- Question 1 -->
-    <div class="question">
-      <label>1. What keyword is used to declare a constant in JavaScript?</label><br>
-      <input type="radio" name="q1" value="var"> var<br>
-      <input type="radio" name="q1" value="let"> let<br>
-      <input type="radio" name="q1" value="const"> const<br>
+    <div class="quiz-container">
+        <h1>CSS Selectors Quiz</h1>
+        <form id="quiz-form">
+            <div class="question-container">
+                <p>1. What selector would you use to style all &lt;p&gt; elements inside a &lt;div&gt;?</p>
+                <label><input type="radio" name="q1" value="a"> a: div + p</label><br>
+                <label><input type="radio" name="q1" value="b"> b: div p</label><br>
+                <label><input type="radio" name="q1" value="c"> c: div > p</label><br>
+                <label><input type="radio" name="q1" value="d"> d: p div</label>
+            </div>
+
+            <div class="question-container">
+                <p>2. Which of the following targets all elements with the class name <code>highlight</code>?</p>
+                <label><input type="radio" name="q2" value="a"> a: #highlight</label><br>
+                <label><input type="radio" name="q2" value="b"> b: .highlight</label><br>
+                <label><input type="radio" name="q2" value="c"> c: highlight</label><br>
+                <label><input type="radio" name="q2" value="d"> d: *highlight</label>
+            </div>
+
+            <div class="question-container">
+                <p>3. How would you select the first child &lt;li&gt; element in a &lt;ul&gt;?</p>
+                <label><input type="radio" name="q3" value="a"> a: ul li:first-child</label><br>
+                <label><input type="radio" name="q3" value="b"> b: ul li:first</label><br>
+                <label><input type="radio" name="q3" value="c"> c: ul > li:nth-child(2)</label><br>
+                <label><input type="radio" name="q3" value="d"> d: ul li:child(1)</label>
+            </div>
+
+            <div class="question-container">
+                <p>4. Which selector would target the element with id='header'?</p>
+                <label><input type="radio" name="q4" value="a"> a: header</label><br>
+                <label><input type="radio" name="q4" value="b"> b: #header</label><br>
+                <label><input type="radio" name="q4" value="c"> c: .header</label><br>
+                <label><input type="radio" name="q4" value="d"> d: :header</label>
+            </div>
+
+            <div class="question-container">
+                <p>5. What selector would you use to apply styles to an &lt;input&gt; element of type text?</p>
+                <label><input type="radio" name="q5" value="a"> a: [text]</label><br>
+                <label><input type="radio" name="q5" value="b"> b: input[type='text']</label><br>
+                <label><input type="radio" name="q5" value="c"> c: input[text]</label><br>
+                <label><input type="radio" name="q5" value="d"> d: [input='text']</label>
+            </div>
+
+            <div class="question-container">
+                <p>6. Which of the following would style &lt;p&gt; elements that follow an &lt;h2&gt; element?</p>
+                <label><input type="radio" name="q6" value="a"> a: h2 > p</label><br>
+                <label><input type="radio" name="q6" value="b"> b: h2 + p</label><br>
+                <label><input type="radio" name="q6" value="c"> c: h2 ~ p</label><br>
+                <label><input type="radio" name="q6" value="d"> d: p h2</label>
+            </div>
+
+            <div class="question-container">
+                <p>7. Which pseudo-class targets the &lt;a&gt; element when hovered over by a mouse?</p>
+                <label><input type="radio" name="q7" value="a"> a: a:click</label><br>
+                <label><input type="radio" name="q7" value="b"> b: a:hover</label><br>
+                <label><input type="radio" name="q7" value="c"> c: a:active</label><br>
+                <label><input type="radio" name="q7" value="d"> d: a:focus</label>
+            </div>
+
+            <button type="button" id="submit">Submit Quiz</button>
+        </form>
+        <div id="results"></div>
     </div>
 
-    <!-- Question 2 -->
-    <div class="question">
-      <label>2. Which of the following is a JavaScript data type?</label><br>
-      <input type="radio" name="q2" value="Array"> Array<br>
-      <input type="radio" name="q2" value="Number"> Number<br>
-      <input type="radio" name="q2" value="String"> String<br>
-      <input type="radio" name="q2" value="All of the above"> All of the above<br>
-    </div>
-
-    <!-- Question 3 -->
-    <div class="question">
-      <label>3. How do you write an `if` statement in JavaScript?</label><br>
-      <input type="radio" name="q3" value="if (x == 5) {}"> if (x == 5) {}<br>
-      <input type="radio" name="q3" value="if x == 5 then {}"> if x == 5 then {}<br>
-      <input type="radio" name="q3" value="if x = 5 {}"> if x = 5 {}<br>
-    </div>
-
-    <!-- Question 4 -->
-    <div class="question">
-      <label>4. How do you call a function named `myFunction`?</label><br>
-      <input type="radio" name="q4" value="call myFunction()"> call myFunction()<br>
-      <input type="radio" name="q4" value="myFunction()"> myFunction()<br>
-      <input type="radio" name="q4" value="run myFunction()"> run myFunction()<br>
-    </div>
-
-    <!-- Question 5 -->
-    <div class="question">
-      <label>5. Which method can be used to manipulate the HTML DOM?</label><br>
-      <input type="radio" name="q5" value="document.getElementById()"> document.getElementById()<br>
-      <input type="radio" name="q5" value="console.log()"> console.log()<br>
-      <input type="radio" name="q5" value="alert()"> alert()<br>
-    </div>
-
-    <button type="button" onclick="checkAnswers()">Submit</button>
-  </form>
-
-  <p id="result"></p>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
