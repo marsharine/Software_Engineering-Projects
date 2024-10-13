@@ -3,74 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors Quiz</title>
+    <title>Interactive Balance Sheet</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>CSS Selectors Quiz</h1>
-        <form id="quiz-form">
-            <div class="question-container">
-                <p>1. What selector would you use to style all &lt;p&gt; elements inside a &lt;div&gt;?</p>
-                <label><input type="radio" name="q1" value="a"> a: div + p</label><br>
-                <label><input type="radio" name="q1" value="b"> b: div p</label><br>
-                <label><input type="radio" name="q1" value="c"> c: div > p</label><br>
-                <label><input type="radio" name="q1" value="d"> d: p div</label>
+    <main>
+        <section>
+            <h1>
+                <span class="flex">
+                    <span>ABC Company</span>
+                    <span>Balance Sheet</span>
+                </span>
+            </h1>
+            <div id="years" aria-hidden="true">
+                <span class="year">2019</span>
+                <span class="year">2020</span>
+                <span class="year">2021</span>
             </div>
+            <div class="table-wrap">
+                <table>
+                    <caption>Assets</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th>2019</th>
+                            <th>2020</th>
+                            <th>2021</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="data">
+                            <th>Cash <span class="description">Cash on hand.</span></th>
+                            <td><input type="number" id="cash2019" value="25" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="cash2020" value="30" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="cash2021" value="28" placeholder="0" onchange="updateTotals()"></td>
+                        </tr>
+                        <tr class="data">
+                            <th>Checking <span class="description">Primary account.</span></th>
+                            <td><input type="number" id="checking2019" value="54" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="checking2020" value="56" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="checking2021" value="53" placeholder="0" onchange="updateTotals()"></td>
+                        </tr>
+                        <tr class="data">
+                            <th>Savings <span class="description">Emergency funds.</span></th>
+                            <td><input type="number" id="savings2019" value="500" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="savings2020" value="650" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="savings2021" value="728" placeholder="0" onchange="updateTotals()"></td>
+                        </tr>
+                        <tr class="total">
+                            <th>Total Assets</th>
+                            <td id="totalAssets2019">$0</td>
+                            <td id="totalAssets2020">$0</td>
+                            <td id="totalAssets2021">$0</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <div class="question-container">
-                <p>2. Which of the following targets all elements with the class name <code>highlight</code>?</p>
-                <label><input type="radio" name="q2" value="a"> a: #highlight</label><br>
-                <label><input type="radio" name="q2" value="b"> b: .highlight</label><br>
-                <label><input type="radio" name="q2" value="c"> c: highlight</label><br>
-                <label><input type="radio" name="q2" value="d"> d: *highlight</label>
+                <table>
+                    <caption>Liabilities</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th>2019</th>
+                            <th>2020</th>
+                            <th>2021</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="data">
+                            <th>Loans <span class="description">Outstanding loan balance.</span></th>
+                            <td><input type="number" id="loans2019" value="500" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="loans2020" value="250" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="loans2021" value="0" placeholder="0" onchange="updateTotals()"></td>
+                        </tr>
+                        <tr class="data">
+                            <th>Expenses <span class="description">Anticipated expenses.</span></th>
+                            <td><input type="number" id="expenses2019" value="200" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="expenses2020" value="300" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="expenses2021" value="400" placeholder="0" onchange="updateTotals()"></td>
+                        </tr>
+                        <tr class="data">
+                            <th>Credit <span class="description">Credit card balance.</span></th>
+                            <td><input type="number" id="credit2019" value="50" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="credit2020" value="50" placeholder="0" onchange="updateTotals()"></td>
+                            <td><input type="number" id="credit2021" value="75" placeholder="0" onchange="updateTotals()"></td>
+                        </tr>
+                        <tr class="total">
+                            <th>Total Liabilities</th>
+                            <td id="totalLiabilities2019">$0</td>
+                            <td id="totalLiabilities2020">$0</td>
+                            <td id="totalLiabilities2021">$0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <caption>Net Worth</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th>2019</th>
+                            <th>2020</th>
+                            <th>2021</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="total">
+                            <th>Net Worth</th>
+                            <td id="netWorth2019">$0</td>
+                            <td id="netWorth2020">$0</td>
+                            <td id="netWorth2021">$0</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
-            <div class="question-container">
-                <p>3. How would you select the first child &lt;li&gt; element in a &lt;ul&gt;?</p>
-                <label><input type="radio" name="q3" value="a"> a: ul li:first-child</label><br>
-                <label><input type="radio" name="q3" value="b"> b: ul li:first</label><br>
-                <label><input type="radio" name="q3" value="c"> c: ul > li:nth-child(2)</label><br>
-                <label><input type="radio" name="q3" value="d"> d: ul li:child(1)</label>
-            </div>
-
-            <div class="question-container">
-                <p>4. Which selector would target the element with id='header'?</p>
-                <label><input type="radio" name="q4" value="a"> a: header</label><br>
-                <label><input type="radio" name="q4" value="b"> b: #header</label><br>
-                <label><input type="radio" name="q4" value="c"> c: .header</label><br>
-                <label><input type="radio" name="q4" value="d"> d: :header</label>
-            </div>
-
-            <div class="question-container">
-                <p>5. What selector would you use to apply styles to an &lt;input&gt; element of type text?</p>
-                <label><input type="radio" name="q5" value="a"> a: [text]</label><br>
-                <label><input type="radio" name="q5" value="b"> b: input[type='text']</label><br>
-                <label><input type="radio" name="q5" value="c"> c: input[text]</label><br>
-                <label><input type="radio" name="q5" value="d"> d: [input='text']</label>
-            </div>
-
-            <div class="question-container">
-                <p>6. Which of the following would style &lt;p&gt; elements that follow an &lt;h2&gt; element?</p>
-                <label><input type="radio" name="q6" value="a"> a: h2 > p</label><br>
-                <label><input type="radio" name="q6" value="b"> b: h2 + p</label><br>
-                <label><input type="radio" name="q6" value="c"> c: h2 ~ p</label><br>
-                <label><input type="radio" name="q6" value="d"> d: p h2</label>
-            </div>
-
-            <div class="question-container">
-                <p>7. Which pseudo-class targets the &lt;a&gt; element when hovered over by a mouse?</p>
-                <label><input type="radio" name="q7" value="a"> a: a:click</label><br>
-                <label><input type="radio" name="q7" value="b"> b: a:hover</label><br>
-                <label><input type="radio" name="q7" value="c"> c: a:active</label><br>
-                <label><input type="radio" name="q7" value="d"> d: a:focus</label>
-            </div>
-
-            <button type="button" id="submit">Submit Quiz</button>
-        </form>
-        <div id="results"></div>
-    </div>
-
-    <script src="script.js"></script>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
 </body>
 </html>
