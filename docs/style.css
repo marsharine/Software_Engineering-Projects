@@ -1,147 +1,107 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background for body */
-    color: white; /* White text color for contrast */
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+  background-image: url('https://github.com/user-attachments/assets/93e3be59-1ba1-4651-8ebb-b82d6fb1e0e1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3; /* Fallback background color */
+  overflow: auto; /* Ensure scroll bars appear */
 }
 
-.title-bar {
-    background-color: #000; /* Black background for title bar */
-    padding: 10px; /* Adjusted padding for the title bar */
-    text-align: center; /* Center text in title bar */
-    position: relative; /* Change from fixed to relative */
-    width: 100%; /* Full width */
-    top: 0; /* Align at the top */
-    z-index: 100; /* Keep it above other content */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
 }
 
-.side-menu {
-    background-color: #000; /* Black background for side menu */
-    position: fixed; /* Fix position on the left */
-    top: 60px; /* Below the title bar */
-    left: 0; /* Align to the left */
-    width: 200px; /* Fixed width for the menu */
-    height: calc(100% - 60px); /* Adjust height to account for title bar */
-    overflow-y: auto; /* Enable vertical scroll if needed */
-    padding-top: 80px; /* Padding for the menu */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
+.welcome-section {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* Dark chocolate brown */
+  color:#3e1f1b;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 30%; /* Same width as the menu */
 }
 
-.side-menu ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+.logo {
+  width: 100px;
+  margin-right: 20px;
+  background-color: #3e1f1b; /* Dark chocolate brown */
 }
 
-.side-menu a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* White text color */
-    display: block; /* Block display for links */
-    padding: 10px; /* Padding for each link */
-    transition: background-color 0.3s; /* Transition for hover effect */
-    font-size: 20px; /* Adjust this value as needed */
+.welcome-title {
+  font-size: 36px;
+  font-family: 'Cursive', sans-serif;
+  margin: 0;
 }
 
-.side-menu a:hover {
-    background-color: #444; /* Change background on hover */
+.menu-header {
+  width: 30%; /* Same width as the menu */
+  background-color: rgba(210, 180, 140, 0.9); /* Same background as menu items */
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
-main {
-    margin-left: 220px; /* Space for the side menu */
-    padding-top: 50px; /* Space for the title bar */
+.menu-title {
+  margin: 0;
+  font-size: 64px;
+  text-align: center;
 }
 
-section {
-    margin: 60px 0; /* Increase vertical space between sections */
-    padding: 20px; /* Add some padding inside sections for better readability */
-    background-color: #1c1c1c; /* Dark background for sections for contrast */
-    color: white; /* Change text color for better visibility */
-    border-radius: 5px; /* Add rounded corners to sections */
+.menu {
+  width: 50%;
+  background-color: rgba(210, 180, 140, 0.9);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
-/* General link styling */
-section a {
-    color: #1abc9c; /* Light teal color for visibility */
-    text-decoration: underline; /* Underline for visibility */
-    font-weight: bold; /* Bold text for emphasis */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color and background */
-    padding: 2px 4px; /* Padding for better interaction area */
-    background-color: rgba(255, 255, 255, 0.1); /* Light background to make links pop */
-    border-radius: 3px; /* Subtle rounding for nicer effect */
+h2 {
+  color: #765941;
+  border-bottom: 2px solid #d3a87c;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  cursor: pointer; /* Indicates interactivity */
 }
 
-/* Change color when hovering over a link */
-section a:hover {
-    color: #f39c12; /* Change to orange on hover for a visual cue */
-    background-color: rgba(255, 255, 255, 0.2); /* More pronounced background on hover */
-    text-decoration: none; /* Optionally remove underline on hover */
+.hidden {
+  display: none; /* Hide by default */
 }
 
-/* Optional: Additional styling for code blocks to enhance readability */
-pre {
-    background-color: #2a2a2a;
-    color: #00ff00; /* Light green text inside code blocks */
-    border-radius: 5px;
-    padding: 10px;
-    overflow-x: auto; /* Allow horizontal scrolling */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #765941;
+}
+
+.interactive {
+  cursor: pointer; /* Indicates interactivity */
 }
 
 ul {
-    margin: 10px 0; /* Add margin for better spacing */
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  color: #543e28;
 }
 
-pre {
-    background-color: #2a2a2a; /* Darker background for code blocks */
-    border-radius: 5px; /* Add rounded corners */
-    padding: 10px; /* Add padding for better readability */
-}
-
-/* Footer */
-footer {
-    background-color: #2c3e50; /* Dark background */
-    color: white; /* Text color */
-    text-align: center; /* Center text */
-    padding: 15px 0; /* Vertical padding */
-}
-
-footer a {
-    color: #1abc9c; /* Link color */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: bold; /* Bold to stand out */
-    padding: 2px 4px; /* Add padding for a better click area */
-}
-
-footer a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: #f39c12; /* Change to orange on hover */
-    background-color: rgba(255, 255, 255, 0.2); /* Background change for hover effect */
-    border-radius: 3px; /* Subtle rounding for hover state */
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .side-menu {
-        width: 100%; /* Sidebar takes full width on smaller screens */
-        position: relative; /* Change to relative to allow stacking */
-        top: 0; /* Align at the top */
-    }
-
-    main {
-        margin-left: 0; /* No margin on smaller screens */
-        padding-top: 60px; /* Space for the title bar */
-    }
-
-    footer {
-        padding: 10px 0; /* Adjust footer padding for smaller screens */
-    }
-
-    section a {
-        font-size: 18px; /* Slightly larger font for mobile */
-        padding: 4px 6px; /* Increase padding for touch devices */
-    }
-
-    footer a {
-        font-size: 16px; /* Adjust footer link size */
-        padding: 4px 6px; /* Increase padding for mobile */
-    }
+li {
+  margin-bottom: 5px;
 }

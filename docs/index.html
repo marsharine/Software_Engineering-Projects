@@ -1,60 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Nutrition Label</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-  <link href="./styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coconut Cafe Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <div class="label">
-    <header>
-      <h1 class="bold">Nutrition Facts</h1>
-      <div class="divider"></div>
-      <p>8 servings per container</p>
-      <p class="bold">Serving size <span>2/3 cup (55g)</span></p>
-      <!-- Added input field for serving size -->
-      <label for="servingSizeInput">Serving Size (g):</label>
-      <input type="number" id="servingSizeInput" value="55" step="0.1" min="0">
-    </header>
-    <div class="divider large"></div>
-    <div class="calories-info">
-      <div class="left-container">
-        <h2 class="bold small-text">Amount per serving</h2>
-        <p>Calories</p>
-      </div>
-      <span id="calories">230</span>
+  <div class="header-container">
+    <div class="welcome-section">
+      <img src="https://github.com/user-attachments/assets/bbd9bda3-7e33-43e1-a2da-1ae98d1dbb97" alt="Cafe Logo" class="logo">
+      <h1 class="welcome-title">Welcome to Coconut Cafe</h1>
     </div>
-    <div class="divider medium"></div>
-    <div class="daily-value small-text">
-      <p class="bold right no-divider">% Daily Value *</p>
-      <div class="divider"></div>
-      <p><span><span class="bold">Total Fat</span> <span id="totalFat">8g</span></span> <span class="bold">10%</span></p>
-      <p class="indent no-divider">Saturated Fat <span id="satFat">1g</span> <span class="bold">5%</span></p>
-      <div class="divider"></div>
-      <p class="indent no-divider"><span><i>Trans</i> Fat <span id="transFat">0g</span></span></p>
-      <div class="divider"></div>
-      <p><span><span class="bold">Cholesterol</span> <span id="cholesterol">0mg</span></span> <span class="bold">0%</span></p>
-      <p><span><span class="bold">Sodium</span> <span id="sodium">160mg</span></span> <span class="bold">7%</span></p>
-      <p><span><span class="bold">Total Carbohydrate</span> <span id="carbohydrate">37g</span></span> <span class="bold">13%</span></p>
-      <p class="indent no-divider">Dietary Fiber <span id="fiber">4g</span></p>
-      <div class="divider"></div>
-      <p class="indent no-divider">Total Sugars <span id="sugars">12g</span></p>
-      <div class="divider double-indent"></div>
-      <p class="double-indent no-divider">Includes <span id="addedSugars">10g</span> Added Sugars <span class="bold">20%</span></p>
-      <div class="divider"></div>
-      <p class="no-divider"><span><span class="bold">Protein</span> <span id="protein">3g</span></span></p>
-      <div class="divider large"></div>
-      <p>Vitamin D 2mcg <span>10%</span></p>
-      <p>Calcium 260mg <span>20%</span></p>
-      <p>Iron 8mg <span>45%</span></p>
-      <p class="no-divider">Potassium 235mg <span>6%</span></p>
+    <div class="menu-header">
+      <h2 class="menu-title">Cafe Menu</h2>
     </div>
-    <div class="divider medium"></div>
-    <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>
   </div>
-  <script src="script.js"></script>
+
+  <div class="menu">
+    <h2 id="drinks-header" class="interactive">Drinks</h2>
+    <ul id="drinks-list" class="hidden">
+      <!-- Drinks will be populated here -->
+    </ul>
+
+    <h2 id="snacks-header" class="interactive">Snacks</h2>
+    <ul id="snacks-list" class="hidden">
+      <!-- Snacks will be populated here -->
+    </ul>
+  </div>
 </body>
 </html>
