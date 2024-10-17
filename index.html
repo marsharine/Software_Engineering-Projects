@@ -1,159 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marsharine A Simpson - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .left, .right {
-      width: 48%;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-      color: #5c5cd3;
-      font-weight: bold; 
-    }
-    h3 {
-      color: #5c5cd3;
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 5px;
-    }
-    p, ul {
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marsharine A. Simpson Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #5a2d82; /* Purple for headers */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .left, .right {
+            width: 48%;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #5a2d82; /* Purple for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #7324a1;
+        }
+        button {
+            background-color: #5a2d82;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #7324a1;
+        }
+        .hidden {
+            display: none;
+        }
+        .section-title {
+            margin-top: 20px;
+            border-bottom: 2px solid #5a2d82;
+        }
+    </style>
+    <script>
+        function toggleContent(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.classList.toggle('hidden');
+        }
+    </script>
 </head>
 <body>
 
-  <div class="container">
+    <h1>The Resume of Marsharine A. Simpson</h1>
+    <p>
+        <strong>
+            <a href="mailto:marsharineasimpson@gmail.com" title="mailto:marsharineasimpson@gmail.com">Email</a> | 
+            <a href="https://linkedin.com/in/marsharine-a-simpson" title="linkedin.com/in/marsharine-a-simpson">LinkedIn</a> | 
+            <a href="https://github.com/marsharine" title="github.com/marsharine">GitHub</a>
+        </strong>
+    </p>
 
-    <!-- Left Side -->
-    <div class="left">
-      <h2>Marsharine A Simpson</h2>
-      <p>Software Engineer</p>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left">
+            <h2>Expertise Summary</h2>
+            <p>Detail-oriented and self-motivated Data Annotator
+                with 3+ years of remote experience in multimodal data labeling, quality assurance, and content generation for AI models using tools like Labelbox. Proven expertise in handling complex datasets, enhancing model performance, and working independently with excellent communication skills.
+                
+            </p>
 
-      <h3>Experience</h3>
-      <h4>TELUS Digital, Remote — Online Task Contributor</h4>
-      <p><em>June 2021 - Present</em></p>
-      <ul>
-        <li>Conducted data-driven analyses to improve AI prompt outputs and enhance user experiences.</li>
-        <li>Developed and maintained comprehensive documentation to support best practices in digital optimization.</li>
-        <li>Evaluated eCommerce product offerings to enhance visibility and effectiveness.</li>
-        <li>Authored and edited comprehensive documentation to support product performance.</li>
-      </ul>
+            <button onclick="toggleContent('current-assignment')">Current Assignment</button>
+            <div id="current-assignment" class="hidden">
+                <h2>Telus Digital, Remote — Online Task Contributor</h2>
+                <p>June 2021 - Present</p>
+                <ul>
+                    <li>Annotated multimodal datasets (text, images) for AI model training and evaluation.</li>
+                    <li>Maintained a high accuracy rate of 95% across projects.</li>
+                    <li>Conducted data-driven analyses, contributing to a 95% improvement in AI model outputs.</li>
+                    <li>Labeled and tagged datasets, and authored documentation for performance enhancement.</li>
+                </ul>
+            </div>
 
-      <h4>HHAexchange, Miami, FL — Technical Support</h4>
-      <p><em>October 2023 - December 2023</em></p>
-      <ul>
-        <li>Troubleshot and resolved complex service requests for SaaS healthcare software.</li>
-        <li>Developed detailed technical documentation, reducing ticket resolution times by 20%.</li>
-      </ul>
+            <button onclick="toggleContent('career-achievements')">Career Achievements</button>
+            <div id="career-achievements" class="hidden">
+                <h2>Career Achievements</h2>
+                <p>2005 - 2024 (17 yrs 1 mo)</p>
+                <ul>
+                    <li><strong>AT&T:</strong>  Sales Excellence Award
+                        - Recognized for consistently exceeding service deliverables and demonstrating leadership in achieving company goals.
+                    </li>
+                    <li><strong>American Express:</strong> Service Excellence Award - Honored for maintaining high-quality service standards and significantly contributing to team success.
+                    </li>
+                    <li><strong>CenturyLink:</strong> Customer Satisfaction Achievement -
+                    Acknowledged for achieving over 90% customer satisfaction through effective problem-solving techniques and enhancing the overall customer experience.</li>
+                </ul>
+            </div>
 
-      <h4>Delta Faucet, Fort Myers, FL — Customer Service Representative</h4>
-      <p><em>July 2023 - October 2023</em></p>
-      <ul>
-        <li>Analyzed and diagnosed solutions for various Delta products.</li>
-        <li>Documented customer interactions in Salesforce to streamline support processes.</li>
-      </ul>
+            <button onclick="toggleContent('projects')">2024 Projects Completed</button>
+            <div id="projects" class="hidden">
+                <h2>2024 Projects Completed</h2>
+                <ul>
+                    <li><strong>Remote Job Listings Scraping and Data Annotation:</strong> Developed a web scraping tool for 1,000+ job listings, improving recommendation accuracy by 100%.</li>
+                    <li><strong>Interactive Balance Sheet:</strong> Created a financial tracking application using JavaScript with real-time feedback for users.</li>
+                    <li><strong>AI Development Guide Technical Documentation Webpage:</strong> Produced technical documentation for AI development, emphasizing clarity and usability.</li>
+                </ul>
+            </div>
 
-      <h3>Education</h3>
-      <p>University of Phoenix, Phoenix, AZ — Bachelor's of Science in Information Technology (Infosec Concentration)</p>
-      <p>University of Phoenix, Phoenix, AZ — Associate of Arts in Teaching</p>
-      <p><em>Master’s Degree in Computer Software Engineering at University of Texas at Dallas to begin in January 2025</em></p>
+            <button onclick="toggleContent('projects-in-progress')">Projects In Progress</button>
+            <div id="projects-in-progress" class="hidden">
+                <h2>Projects In Progress</h2>
+                <ul>
+                    <li><strong>Developer Technical Documentation Webpage:</strong> Ongoing project for creating detailed documentation for developers.</li>
+                    <li><strong>Healthcare Issue Tracker Web Application:</strong> Developing a web application for tracking healthcare issues, utilizing React and Node.js.</li>
+                </ul>
+            </div>
+        </div>
 
-      <h3>Awards & Recognition</h3>
-      <p>AT&T - Associate of the Month</p>
-      <p>American Express - Associate of the Month</p>
-      <p>CenturyLink - Associate of the Month</p>
+        <!-- Right Section -->
+        <div class="right">
+            <h2>Education</h2>
+            <p><strong>University of Phoenix:</strong> Bachelor’s of Science, Information Technology (2011 - 2013)</p>
+            <p><strong>University of Texas at Dallas:</strong> Master’s of Science, Information Systems / Management (Expected 2027)</p>
 
-      <h3>Additional Cumulative Work Experience</h3>
-      <p>Lumen Technologies, Time Warner Cable, Law Offices of David J. Stern, City of Lauderhill, The Home Depot, AT&T, American Express, Tritech</p>
+            <h2>Certification</h2>
+            <p>Google Data Analytics</p>
+
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python, HTML, CSS, Java, JavaScript, React</li>
+                <li><strong>Tools:</strong> Labelbox, Git, GitHub, VSCode, Jira, Oracle Apex</li>
+                <li><strong>Database:</strong> SQL, Oracle, Firebase</li>
+                <li><strong>Additional Skills:</strong> Data Quality Assurance, Attention to Detail, Problem Solving</li>
+            </ul>
+        </div>
     </div>
 
-    <!-- Right Side -->
-    <div class="right">
-      <h3>Contact Information</h3>
-      <p>Email: marsharineasimpson@gmail.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/marsharine-a-simpson">linkedin.com/in/marsharine-a-simpson</a></p>
-      <p>GitHub: <a href="https://github.com/marsharine">github.com/marsharine</a></p>
-      <p>Phone: (561) 587-9887</p>
-
-      <h3>Skills</h3>
-      <ul>
-        <li><strong>Web Development:</strong>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>React, Angular, Vue.js</li>
-                <li>Node.js, Express.js</li>
-                <li>Django, Ruby on Rails</li>
-                <li>MySQL, PostgreSQL, MongoDB</li>
-                <li>Git, GitHub, Docker</li>
-                <li>Vercel, Heroku</li>
-            </ul>
-        </li>
-        <li><strong>Machine Learning:</strong>
-            <ul>
-                <li>Python, R</li>
-                <li>TensorFlow, PyTorch</li>
-                <li>Scikit-Learn, Pandas, NumPy</li>
-                <li>MLflow, TensorFlow Serving</li>
-            </ul>
-        </li>
-        <li><strong>Artificial Intelligence:</strong>
-            <ul>
-                <li>NLP with spaCy, NLTK</li>
-                <li>Computer Vision with OpenCV, Keras</li>
-                <li>Reinforcement Learning with OpenAI Gym</li>
-            </ul>
-        </li>
-        <li><strong>Data Analytics:</strong>
-            <ul>
-                <li>Tableau, Power BI, Looker</li>
-                <li>Apache Spark, Apache Kafka</li>
-                <li>SAS, Excel</li>
-                <li>Hadoop, MongoDB</li>
-            </ul>
-        </li>
-        <li><strong>Soft Skills:</strong>
-            <ul>
-                <li>Communication</li>
-                <li>Collaboration</li>
-                <li>Problem-Solving</li>
-            </ul>
-        </li>
-    </ul>
-
-      <a href=""><h3>View Projects</h3></a> 
-      <h4>Ada Lovelace Tribute Page</h4>
-      <p>Developed a responsive website celebrating the life and contributions of Ada Lovelace using HTML, CSS, and JavaScript.</p>
-      <h4>Interactive Cafe Menu</h4>
-      <p>Designed an interactive menu for a fictional cafe, showcasing front-end skills with dynamic elements and user-friendly interface design.</p>
-      <h4>Interactive Balance Sheet</h4>
-      <p>Created an interactive balance sheet using JavaScript to calculate and display financial data dynamically.</p>
-      <h4>Technical Docmentation Webpages</h4>
-      <p>Created functional technical documentation pages using HTML, CSS and JavaScript.</p>
-         
-    </div>
-  </div>  
 </body>
 </html>
