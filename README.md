@@ -22,10 +22,10 @@ Welcome to my projects repository! This repository showcases several of my proje
 
 ## 📂 Project Structure
 
-├── index.html # HTML structure for the app 
-├── styles.css # Styling and design of the app 
-├── script.js # JavaScript functionality 
-└── README.md # Documentation for the project
+├── index.html HTML structure for the app 
+├── styles.css Styling and design of the app 
+├── script.js JavaScript functionality 
+└── README.md Documentation for the project
 
 
 
