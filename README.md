@@ -35,11 +35,14 @@ JavaScript_Quiz - https://pages-pm7zy9x5i-marsharine-simpsons-projects.vercel.ap
 
 📂 Projects' Structure
 
-bash
+
 
 ├── index.html      # HTML structure for the app
+
 ├── styles.css      # Styling and design of the app
+
 ├── script.js       # JavaScript functionality
+
 └── README.md       # Documentation for the project
 
 🔧 Installation
