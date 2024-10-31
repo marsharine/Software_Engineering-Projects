@@ -161,10 +161,11 @@ ul li {
 
 /* Contact Form Section */
 #contact {
-    background-color: #fff;
+    background-color: #fff; /* Ensure it contrasts with the body background */
     padding: 50px;
     margin-top: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Optional: To give it rounded corners */
 }
 
 .form-group {
