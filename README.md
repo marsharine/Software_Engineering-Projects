@@ -33,13 +33,11 @@ Welcome to my projects repository! This repository showcases several of my proje
 
 To use these projects locally, follow these steps:
 
-1. **Clone the repository:**
+1. Clone the repository:
   
    git clone https://github.com/marsharine.git
 
     Navigate to the project folder:
-
-    bash
 
     cd palindrome-checker
 
