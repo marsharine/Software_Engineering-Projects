@@ -1,7 +1,10 @@
 Software Engineering Projects Repository
 
 This repository showcases several of my projects, each index files are saved to separated branches.
-The following are some of my projects, feel free to review within branches and view corresponding 🚀 Demos:
+
+Feel free to review within branches. 
+
+These are the corresponding 🚀 Demos:
 
 Projects Portfolio - https://lovelace-git-projects-portfolio-marsharine-simpsons-projects.vercel.app/
 
