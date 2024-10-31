@@ -29,7 +29,7 @@ Welcome to my projects repository! This repository showcases several of my proje
 
 
 
-## 🔧 Installation
+🔧 Installation
 
 To use these projects locally, follow these steps:
 
