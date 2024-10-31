@@ -3,7 +3,7 @@ Palindrome Checker
 A simple and interactive Palindrome Checker built with HTML, CSS, and JavaScript. This tool lets users check if a word or sentence is a palindrome—ignoring punctuation, spacing, and case. It’s a beginner-friendly project that showcases basic web development skills, input validation, and dynamic result display.
 🚀 Demo
 
-Check out the Live Demo of the Palindrome Checker.
+Check out the Live Demo of the Palindrome Checker. https://pages-git-palindromechecker-marsharine-simpsons-projects.vercel.app/
 📜 Features
 
     Interactive Palindrome Check: Enter any word or sentence to see if it reads the same backward and forward.
