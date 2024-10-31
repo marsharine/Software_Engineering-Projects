@@ -7,6 +7,7 @@ Welcome to my projects repository! This repository showcases several of my proje
 - [Projects Portfolio](https://lovelace-git-projects-portfolio-marsharine-simpsons-projects.vercel.app/)
 - [Palindrome Checker](https://pages-git-palindromechecker-marsharine-simpsons-projects.vercel.app/)
 - [Ida Lovelace Tribute Page](https://pages-git-lovelacetributewe-ab1fa1-marsharine-simpsons-projects.vercel.app/)
+- [Interactive Cafe Menu](https://pages-dtev7mv1r-marsharine-simpsons-projects.vercel.app/)      
 - [Product Landing Page](https://pages-git-productlanding-page-marsharine-simpsons-projects.vercel.app/)
 - [Balance Sheet](https://pages-lb5dld5r9-marsharine-simpsons-projects.vercel.app/)
 - [Customer Satisfaction Survey](https://pages-7lqxyy92h-marsharine-simpsons-projects.vercel.app/)
