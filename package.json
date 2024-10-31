@@ -1,19 +1,16 @@
 {
-    "name": "collectibles-scraper",
-    "version": "1.0.0",
-    "description": "A serverless function to scrape fashion collectibles from eBay and collectibles.com",
-    "main": "api/collectibles.js",
-    "scripts": {
-      "start": "node index.js",  // This can be used if you run a local server
-      "deploy": "vercel"         // Optional: command to deploy to Vercel
-    },
-    "author": "Your Name",
-    "license": "MIT",
-    "dependencies": {
-      "axios": "^0.27.2",         // For making HTTP requests
-      "cheerio": "^1.0.0-rc.10"   // For parsing HTML
-    },
-    "engines": {
-      "node": ">=14.x"            // Specify the Node.js version
-    }
+  "name": "collectibles-scraper",
+  "version": "1.0.0",
+  "description": "A scraper for collectibles from various sources.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.3"
   }
+}
