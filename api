@@ -1,0 +1,11 @@
+// api/collectibles.js
+export default async function handler(req, res) {
+    if (req.method === 'GET') {
+        // Here you would fetch data from eBay or collectibles.com
+        const collectibles = await fetchCollectibles(); // Placeholder function
+        res.status(200).json(collectibles);
+    } else {
+        res.setHeader('Allow', ['GET']);
+        res.status(405).end(`Method ${req.method} Not Allowed`);
+    }
+}

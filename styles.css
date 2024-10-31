@@ -1,0 +1,252 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    margin: 20px; /* Specify pixel units */
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #eef1dc; /* Light background color */
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 600px) {
+    #header-img {
+        width: 40px; /* Smaller logo for mobile */
+        border-radius: 50%; /* Oval shape on mobile */
+        margin-left: 10px; /* Space from left screen edge */
+    }
+    .welcome-message {
+        font-size: 1.2rem; /* Smaller text for mobile */
+    }
+}
+
+/* Navbar Styles */
+#nav-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #eef1dc;
+    padding: 0;
+}
+
+#header-img {
+    max-width: 200px;
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0; /* Space between logo and nav items */
+    padding: 0; /* Set to zero to eliminate ambiguity */
+    top: 0;
+    align-items: center;
+}
+
+.nav-content {
+    flex-grow: 1; /* Centers the nav links */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+}
+
+nav ul {
+    display: flex;
+    list-style: none; /* Remove default list styling */
+}
+
+nav li {
+    margin: 0 20px; /* Space between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(200, 147, 48);
+    font-size: 25px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url("https://via.placeholder.com/1200x400") no-repeat center center / cover;
+    padding: 100px 0;
+    color: #eef1dc;
+    text-align: center;
+    margin-top: 70px; /* Space below fixed navbar */
+}
+
+.hero-button {
+    background-color: #eef1dc;
+    color: #2c2e31;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #a18e78;
+}
+
+/* Product Section */
+#product {
+    background-color: #353b39;
+    padding: 50px;
+    margin: 30px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(160, 194, 10, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.product-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Description Section */
+#description {
+    background-color: #fafafa;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+#description p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #080808;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Feature Styles */
+.feature {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.feature i {
+    font-size: 2rem;
+    color: #f0c14b;
+    margin-right: 15px;
+}
+
+.feature h3 {
+    margin: 0;
+}
+
+/* Contact Form Section */
+#contact {
+    background-color: #fff;
+    padding: 50px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#submit {
+    background-color: #eef1dc;
+    color: #000;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #a18e78;
+}
+
+.main-content {
+    padding-top: 100px; /* Adjust to height of nav-bar to prevent hidden content */
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: #eef1dc;
+}
+
+/* AOS Animations */
+[data-aos] {
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Collectibles Search Section */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #eef1dc;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #a18e78;
+}
+
+.results-box {
+    max-height: 300px; /* Set a max height for the scrolling area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fafafa; /* Light background for results */
+    margin-top: 10px;
+}
