@@ -1,204 +1,272 @@
-/* General Reset */
+* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
-    color: #333;
     line-height: 1.6;
+    padding-top: 80px; /* Space for fixed navbar */
+    background-color: #f4f4f4; /* Light background color */
 }
 
-/* Navbar */
+/* Navbar styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #411b5a;
     color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Space between profile and menu */
+    align-items: center;
+    z-index: 1000;
 }
 
-.navbar-profile h1 {
-    font-size: 1.5em;
-    color: #ffffff;
-    margin-left: 10px;
-}
-
-.navbar-profile a {
+.navbar-profile {
     display: flex;
     align-items: center;
-    color: inherit;
-    text-decoration: none;
+    gap: 15px;
 }
 
-.navbar-profile img {
+.profile-img {
+    width: 60px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 20px;
 }
 
 .navbar-menu a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
 }
 
 .navbar-menu a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    background-color: #e0f7fa;
+    color: #001f3f;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+/* General Section Styles */
+section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
 }
 
 /* Welcome Section */
 #welcome-section {
+    background-color: #ffffff; /* Consistent light background */
+}
+
+.welcome-content {
     text-align: center;
-    padding: 100px 20px;
-    background-color: #f4f4f9;
 }
 
-.welcome-content h2 {
-    font-size: 2.5em;
-    color: #333;
-    animation: typewriter 2s steps(15, end) forwards;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid #333;
+.highlight {
+    color: #411b5a;
+    font-size: 2rem;
 }
 
-@keyframes typewriter {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-/* Projects Section */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.projects-content {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-image {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.project-image:hover {
-    transform: scale(1.05);
+.cta-buttons {
+    margin-top: 20px;
 }
 
 .cta-btn {
     display: inline-block;
-    background-color: #333;
-    color: #ffffff;
+    background-color: #411b5a;
+    color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 50px;
     text-decoration: none;
-    transition: background-color 0.3s;
-    margin-top: 10px;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
-    background-color: #555;
+    background-color: #e0f7fa;
+    color: #001f3f;
 }
 
-/* General Styling for Autobiography Section */
-#autobiography-section {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.6;
+/* Biography Section */
+#biography-section {
+    background-color: #ffffff;
     color: #333;
+    padding: 60px 20px;
 }
 
-#autobiography-section h1 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.biography-columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-#autobiography-section .project-image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-    border-radius: 10px;
+.biography-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 33%;
+    padding: 10px;
+    border: 2px solid #411b5a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#autobiography-section .intro, .section {
-    margin-top: 20px;
-}
-
-#autobiography-section h2 {
-    font-size: 1.8em;
-    color: #8468d1;
+.biography-column h2 {
+    font-size: 1.5em;
+    color: #411b5a;
     margin-bottom: 10px;
 }
 
-#autobiography-section p, li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
+.biography-scroll-box {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
 }
 
-#autobiography-section ul {
-    padding-left: 20px;
-}
-
-#autobiography-section ul li {
-    margin-bottom: 8px;
-    list-style-type: disc;
-}
-/* CSS for the Projects Section Images */
-.project-image,
-.resume-image,
-.autobiography-image {
-    width: 300px; 
-    height: 200px; 
-    object-fit: cover; /* Ensures image maintains aspect ratio without stretching */
-    border-radius: 8px; /* Adds rounded corners for a polished look */
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
-
-#backToTop {
-    background-color: #555;
-    color: #ffffff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#backToTop:hover {
-    background-color: #777;
-}
-
-/* Responsive Adjustments */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .navbar-profile h1 {
-        font-size: 1.2em;
+    .biography-columns {
+        flex-direction: column;
     }
 
-    .welcome-content h2 {
-        font-size: 2em;
+    .biography-column {
+        max-width: 100%;
+        margin-bottom: 20px;
     }
+}
+
+#projects-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+
+.projects-content {
+    text-align: center;
+}
+
+.lovelace-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lovelace-image {
+    width: 250px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Image scale transition */
+}
+
+.lovelace-image:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.quote-container {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #411b5a;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lovelace-page {
+    display: inline-block;
+    background-color: #411b5a; /* Match existing CTA button color */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.lovelace-page:hover {
+    background-color: #e0f7fa;
+    color: #001f3f;
+}
+
+/* Button Styles */
+.lovelace-page {
+    display: inline-block;
+    background-color: #411b5a; /* Match existing CTA button color */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.lovelace-page:hover {
+    background-color: #e0f7fa;
+    color: #001f3f;
+}
+
+/* Contact Section */
+#contact-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+#resume-section {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 60px 20px;
+}
+
+.resume-content {
+    text-align: center;
+}
+
+.resume-content h2 {
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.resume-content p {
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.resume-link {
+    display: inline-block;
+    background-color: #411b5a; /* Matching CTA button color */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.resume-link:hover {
+    background-color: #e0f7fa;
+    color: #001f3f;
 }
