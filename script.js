@@ -1,12 +1,25 @@
+document.addEventListener('DOMContentLoaded', initializePortfolio);
+
+function initializePortfolio() {
+    enableSmoothScroll();
+    initializeTypewriter();
+    enableAccordion();
+    setupMobileMenuToggle();
+    setupActiveLinkHighlighting();
+    setupCtaButtonScroll();
+    setupQuoteRotator();
+    setupBackToTopButton();
+    setupFormValidation();
+    setupAutobiographySectionToggle();
+}
+
 // Smooth Scrolling for Navbar Links
 function enableSmoothScroll() {
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
-            document.getElementById(targetId).scrollIntoView({
-                behavior: 'smooth'
-            });
+            document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
         });
     });
 }
@@ -112,7 +125,7 @@ function setupQuoteRotator() {
 
         if (quoteText && image) {
             quoteText.textContent = quotes[currentIndex];
-            image.src = images[currentIndex];
+            image.src = images[currentIndex % images.length];
             currentIndex = (currentIndex + 1) % quotes.length;
         }
     }
@@ -125,10 +138,7 @@ function setupBackToTopButton() {
     const backToTopButton = document.getElementById('backToTop');
     if (backToTopButton) {
         backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 }
@@ -150,22 +160,16 @@ function setupFormValidation() {
     }
 }
 
-// Initialize All Functions
-function initializePortfolio() {
-    enableSmoothScroll();
-    initializeTypewriter();
-    enableAccordion();
-    setupMobileMenuToggle();
-    setupActiveLinkHighlighting();
-    setupCtaButtonScroll();
-    setupQuoteRotator();
-    setupBackToTopButton();
-    setupFormValidation();
-}
-
-// Call initialize function when DOM content is loaded
-// Smooth scroll for Back to Top button
-document.getElementById("backToTop").addEventListener("click", function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+// Autobiography Section Toggle and Smooth Scroll
+function setupAutobiographySectionToggle() {
+    const viewAutobiographyButton = document.getElementById('view-autobiography');
+    const autobiographySection = document.getElementById('autobiography-section');
     
+    if (viewAutobiographyButton && autobiographySection) {
+        viewAutobiographyButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            autobiographySection.classList.add('visible');
+            autobiographySection.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+}
