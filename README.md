@@ -4,14 +4,21 @@
 
 I build technology, teach it, and troubleshoot it.
 
-My work combines **software development, educational technology, information technology, cybersecurity, technical support, and instructional design** to create practical digital experiences that are understandable, interactive, and useful.
+My work combines **software development, educational technology, information technology, cybersecurity, technical support, AI evaluation, and instructional design** to create practical digital experiences that are understandable, interactive, and useful.
 
 This repository is a curated collection of selected projects demonstrating my work with:
 
+- React
+- TypeScript
 - JavaScript
 - HTML5
 - CSS3
+- Supabase
+- Git & GitHub
 - Front-End Development
+- Full-Stack Application Development
+- Authentication
+- Database Integration
 - Educational Technology
 - AI Literacy
 - Responsive Design
@@ -33,7 +40,41 @@ My portfolio brings together selected development projects, professional experie
 
 # Featured Projects
 
-## 01 — AI Development Field Guide
+## 01 — Student Progress Tracker
+
+**Full-Stack Web Application · React · TypeScript · Supabase · EdTech**
+
+A full-stack education application designed to help teachers securely manage and track student progress.
+
+This project demonstrates my current software engineering workflow, including authentication, protected routes, database-backed application development, iterative feature implementation, debugging, version control, and deployment.
+
+### Key Features
+
+- User authentication
+- Protected application routes
+- Session management
+- Supabase backend integration
+- Database-backed student data
+- Teacher dashboard
+- React component architecture
+- TypeScript-based development
+- Iterative feature development
+- Git and GitHub version control
+- Deployed application workflow
+- Fictional student data used for development and demonstration
+
+**Technologies:**  
+React · TypeScript · Supabase · JavaScript · HTML5 · CSS3 · Git · GitHub · Vercel
+
+### Links
+
+[Live Demo](PASTE-YOUR-VERCEL-LINK-HERE)
+
+[View Source](https://github.com/marsharine-cs/student-progress-tracker)
+
+---
+
+## 02 — AI Development Field Guide
 
 **Interactive Learning Application · AI Literacy · EdTech**
 
@@ -66,7 +107,7 @@ JavaScript · HTML5 · CSS3 · EdTech · Accessibility · Technical Writing
 
 ---
 
-## 02 — JavaScript Knowledge Quiz
+## 03 — JavaScript Knowledge Quiz
 
 **Educational Technology · JavaScript · Assessment**
 
@@ -100,7 +141,7 @@ JavaScript · DOM Manipulation · EdTech · Assessment Design · Accessibility
 
 ---
 
-## 03 — Ada Lovelace: The Poetry of Computation
+## 04 — Ada Lovelace: The Poetry of Computation
 
 **Interactive Digital History · EdTech · Web Development**
 
@@ -130,7 +171,7 @@ HTML5 · CSS3 · JavaScript · EdTech · Digital Storytelling · Accessibility
 
 ---
 
-## 04 — Luma One
+## 05 — Luma One
 
 **Front-End Development · JavaScript · Product UI**
 
@@ -160,7 +201,7 @@ HTML5 · CSS3 · JavaScript · Responsive Design · Application State
 
 ---
 
-## 05 — Interactive Balance Sheet
+## 06 — Interactive Balance Sheet
 
 **JavaScript · Financial Dashboard · Application Logic**
 
@@ -194,7 +235,7 @@ JavaScript · DOM Manipulation · Application State · Financial Logic · Respon
 
 ---
 
-## 06 — Palindrome Checker
+## 07 — Palindrome Checker
 
 **JavaScript · Text Processing · Accessibility**
 
@@ -228,7 +269,7 @@ JavaScript · Regular Expressions · Unicode · DOM Manipulation · Accessibilit
 
 ## Build
 
-I create responsive interfaces and interactive JavaScript applications designed around usability, accessibility, and practical functionality.
+I create responsive interfaces and interactive applications, including full-stack projects that incorporate authentication, database integration, application state, and deployed web experiences.
 
 ## Teach
 
@@ -246,11 +287,11 @@ My technical support and IT background informs a systematic problem-solving proc
 
 ### Development
 
-JavaScript · HTML5 · CSS3 · Python · Git · GitHub
+React · TypeScript · JavaScript · HTML5 · CSS3 · Python · Git · GitHub
 
-### Front-End & Web
+### Full-Stack & Web
 
-DOM Manipulation · Responsive Web Design · Accessibility · Application State · Vercel
+Supabase · Authentication · Protected Routes · Database Integration · Application State · Vercel · Responsive Web Design · Accessibility
 
 ### Data & Analytics
 
@@ -258,11 +299,11 @@ Excel · Power BI · Tableau · Data Analytics
 
 ### Technology
 
-Information Technology · Cybersecurity · SaaS Support · Technical Support · Educational Technology
+Information Technology · Cybersecurity · SaaS Support · Technical Support · Educational Technology · AI Evaluation
 
-### Currently Exploring
+### Currently Developing
 
-React · TypeScript · AI-Powered Applications
+Full-Stack Application Development · React Application Architecture · Database-Backed Applications · AI-Powered Applications
 
 ---
 
@@ -289,12 +330,14 @@ K–12
 
 I am particularly interested in opportunities involving:
 
+- Software Engineering
+- Front-End Development
+- Full-Stack Development
 - Computer Science Education
 - S.T.E.M. Education
 - Educational Technology
+- AI Evaluation
 - Technology Training
-- Tutoring and Digital Learning
-- Front-End Development
 - Technical Support
 - IT and Technology Operations
 - Technology-focused instructional roles
@@ -312,11 +355,16 @@ I am particularly interested in opportunities involving:
 ### GitHub
 [github.com/marsharine-cs](https://github.com/marsharine-cs)
 
+### Featured Full-Stack Project
+[Student Progress Tracker](https://github.com/marsharine-cs/student-progress-tracker)
+
 ---
 
 ## About This Repository
 
-This repository is intentionally curated to highlight projects most relevant to my current work in **technology, computer science education, educational technology, and software development**.
+This repository is intentionally curated to highlight projects most relevant to my current work in **software development, computer science education, educational technology, AI, and technical problem-solving**.
+
+Some larger applications, including the Student Progress Tracker, are maintained in their own dedicated repositories and linked here as featured projects so reviewers can inspect both the live application and source code directly.
 
 Additional projects and experiments may be maintained privately while they are being developed or when they are not directly relevant to my current professional focus.
 
