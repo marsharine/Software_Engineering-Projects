@@ -68,7 +68,7 @@ React · TypeScript · Supabase · JavaScript · HTML5 · CSS3 · Git · GitHub 
 
 ### Links
 
-[Live Demo](PASTE-YOUR-VERCEL-LINK-HERE)
+[Live Demo](https://student-progress-tracker-sepia.vercel.app)
 
 [View Source](https://github.com/marsharine-cs/student-progress-tracker)
 
