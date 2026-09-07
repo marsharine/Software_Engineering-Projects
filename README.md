@@ -44,24 +44,27 @@ My portfolio brings together selected development projects, professional experie
 
 **Full-Stack Web Application · React · TypeScript · Supabase · EdTech**
 
-A full-stack education application designed to help teachers securely manage and track student progress.
+A full-stack education application designed to help teachers securely manage students, skills, and assessment records while building toward a dashboard that surfaces learning gaps and support priorities.
 
-This project demonstrates my current software engineering workflow, including authentication, protected routes, database-backed application development, iterative feature implementation, debugging, version control, and deployment.
+This project demonstrates my current software engineering workflow, including authentication, protected application access, database-backed application development, iterative feature implementation, debugging, version control, and deployment.
 
 ### Key Features
 
 - User authentication
-- Protected application routes
+- Protected authenticated application access
 - Session management
 - Supabase backend integration
-- Database-backed student data
-- Teacher dashboard
+- Database-backed student records
+- Database-backed skill records
+- Assessment entry and assessment-history views
 - React component architecture
 - TypeScript-based development
 - Iterative feature development
 - Git and GitHub version control
 - Deployed application workflow
 - Fictional student data used for development and demonstration
+
+**Current next feature:** dashboard summarizing mastery and support priorities.
 
 **Technologies:**  
 React · TypeScript · Supabase · JavaScript · HTML5 · CSS3 · Git · GitHub · Vercel
