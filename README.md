@@ -44,30 +44,31 @@ My portfolio brings together selected development projects, professional experie
 
 **Full-Stack Web Application · React · TypeScript · Supabase · EdTech**
 
-A full-stack education application designed to help teachers securely manage students, skills, and assessment records while building toward a dashboard that surfaces learning gaps and support priorities.
+A full-stack education application that helps teachers securely manage students, skills, and dated assessment history, and see every student's mastery status across every skill at a glance through a color-coded dashboard grid.
 
 This project demonstrates my current software engineering workflow, including authentication, protected application access, database-backed application development, iterative feature implementation, debugging, version control, and deployment.
 
 ### Key Features
 
-- User authentication
+- User authentication, including password reset
 - Protected authenticated application access
 - Session management
 - Supabase backend integration
-- Database-backed student records
-- Database-backed skill records
-- Assessment entry and assessment-history views
+- Row Level Security so each teacher only sees their own data
+- Database-backed student records (create, edit, list, delete)
+- Database-backed skill records (create, edit, list, delete)
+- Assessment entry and dated assessment-history views
+- Teacher dashboard: a students x skills grid, color-coded by each pair's most recent mastery status
+- Automated test suite (Vitest + Testing Library)
 - React component architecture
 - TypeScript-based development
 - Iterative feature development
-- Git and GitHub version control
+- Git and GitHub version control, developed through issues, feature branches, and pull requests
 - Deployed application workflow
 - Fictional student data used for development and demonstration
 
-**Current next feature:** dashboard summarizing mastery and support priorities.
-
 **Technologies:**  
-React · TypeScript · Supabase · JavaScript · HTML5 · CSS3 · Git · GitHub · Vercel
+React · TypeScript · Supabase · Tailwind CSS · Vitest · JavaScript · HTML5 · CSS3 · Git · GitHub · Vercel
 
 ### Links
 
