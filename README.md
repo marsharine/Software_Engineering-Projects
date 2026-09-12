@@ -1,380 +1,150 @@
-# Marsharine A. Simpson — Software Engineering & EdTech Projects
+# Software Engineering & EdTech Projects
 
-## S.T.E.M. Educator & Technology Professional
+**Selected software, learning technology, and interactive web projects by Marsharine A. Simpson**
 
-I build technology, teach it, and troubleshoot it.
+I build technology, teach it, and troubleshoot it. This repository brings together projects that demonstrate practical work with JavaScript, React, TypeScript, responsive interfaces, application logic, accessibility, technical documentation, and educational technology.
 
-My work combines **software development, educational technology, information technology, cybersecurity, technical support, AI evaluation, and instructional design** to create practical digital experiences that are understandable, interactive, and useful.
+## Start here
 
-This repository is a curated collection of selected projects demonstrating my work with:
+| Project | Focus | Live demo |
+|---|---|---|
+| **Student Progress Tracker** | React · TypeScript · Supabase · Full-stack EdTech | [Open app](https://student-progress-tracker-sepia.vercel.app) |
+| **AI Development Field Guide** | AI literacy · JavaScript · Technical documentation | [Open app](https://ai-development-field-guide.vercel.app/) |
+| **JavaScript Knowledge Quiz** | JavaScript · Assessment · Accessible interaction | [Open app](https://javascript-knowledge-quiz.vercel.app/) |
+| **Ada Lovelace: The Poetry of Computation** | Interactive education · Digital history | [Open app](https://ada-lovelace-poetry-of-computation.vercel.app/) |
+| **Luma One** | Product UI · JavaScript · Responsive design | [Open app](https://luma-one-product-landing.vercel.app/) |
+| **Interactive Balance Sheet** | Application state · Financial logic · JavaScript | [Open app](https://interactive-balance-sheet.vercel.app/) |
+| **Palindrome Checker** | Text processing · Regex · Accessibility | [Open app](https://palindrome-checker-8xvfm2c62-marsharine-simpsons-projects.vercel.app/) |
 
-- React
-- TypeScript
-- JavaScript
-- HTML5
-- CSS3
-- Supabase
-- Git & GitHub
-- Front-End Development
-- Full-Stack Application Development
-- Authentication
-- Database Integration
-- Educational Technology
-- AI Literacy
-- Responsive Design
-- Accessibility
-- DOM Manipulation
-- Application State
-- Technical Documentation
-- Technical Problem-Solving
+**Professional portfolio:** https://projectsportfolio-nine.vercel.app/
 
 ---
 
-## 🌐 Professional Portfolio
+## Featured: Student Progress Tracker
 
-### [View My Portfolio](https://projectsportfolio-nine.vercel.app/)
+**React · TypeScript · Supabase · Tailwind CSS · Vitest · Vercel**
 
-My portfolio brings together selected development projects, professional experience, technical skills, education, credentials, and additional information about how I approach technology and problem-solving.
+A full-stack teacher application for managing students, skills, and dated assessment evidence and for displaying the latest mastery status across a student × skill dashboard.
 
----
+The project demonstrates:
 
-# Featured Projects
+- authentication and protected routes
+- PostgreSQL-backed CRUD workflows through Supabase
+- Row Level Security for per-user data isolation
+- dated assessment history
+- derived dashboard state
+- automated tests with Vitest and Testing Library
+- deployment and production debugging
+- development through GitHub Issues, feature branches, and Pull Requests
 
-## 01 — Student Progress Tracker
-
-**Full-Stack Web Application · React · TypeScript · Supabase · EdTech**
-
-A full-stack education application that helps teachers securely manage students, skills, and dated assessment history, and see every student's mastery status across every skill at a glance through a color-coded dashboard grid.
-
-This project demonstrates my current software engineering workflow, including authentication, protected application access, database-backed application development, iterative feature implementation, debugging, version control, and deployment.
-
-### Key Features
-
-- User authentication, including password reset
-- Protected authenticated application access
-- Session management
-- Supabase backend integration
-- Row Level Security so each teacher only sees their own data
-- Database-backed student records (create, edit, list, delete)
-- Database-backed skill records (create, edit, list, delete)
-- Assessment entry and dated assessment-history views
-- Teacher dashboard: a students x skills grid, color-coded by each pair's most recent mastery status
-- Automated test suite (Vitest + Testing Library)
-- React component architecture
-- TypeScript-based development
-- Iterative feature development
-- Git and GitHub version control, developed through issues, feature branches, and pull requests
-- Deployed application workflow
-- Fictional student data used for development and demonstration
-
-**Technologies:**  
-React · TypeScript · Supabase · Tailwind CSS · Vitest · JavaScript · HTML5 · CSS3 · Git · GitHub · Vercel
-
-### Links
-
-[Live Demo](https://student-progress-tracker-sepia.vercel.app)
-
-[View Source](https://github.com/marsharine-cs/student-progress-tracker)
+**[Live demo](https://student-progress-tracker-sepia.vercel.app)** · **[Dedicated repository](https://github.com/marsharine-cs/student-progress-tracker)**
 
 ---
 
-## 02 — AI Development Field Guide
+## Featured: AI Development Field Guide
 
-**Interactive Learning Application · AI Literacy · EdTech**
+**JavaScript · HTML5 · CSS3 · AI literacy · Technical writing · Accessibility**
 
-An interactive learning and reference application that transforms AI technical documentation into a structured educational experience.
+An interactive learning and reference application designed to make AI concepts easier to explore and revisit.
 
-The project includes guided learning sections covering AI fundamentals, machine learning, generative AI, prompt engineering, Retrieval-Augmented Generation, model evaluation, responsible AI, and common AI terminology.
+Topics include AI fundamentals, machine learning, generative AI, prompt engineering, retrieval-augmented generation, model evaluation, responsible AI, and common terminology.
 
-### Key Features
+Key functionality includes:
 
-- Structured AI learning path
-- Documentation search
-- AI concept explorer
-- Searchable glossary
-- Reading progress
-- Light and dark themes
-- Theme persistence
-- Copyable examples
-- Responsive documentation navigation
-- Keyboard accessibility
-- Reduced-motion support
+- searchable documentation
+- concept exploration
+- glossary search
+- reading progress
+- copyable examples
+- persistent light/dark themes
+- responsive navigation
+- keyboard accessibility
+- reduced-motion support
 
-**Technologies:**  
-JavaScript · HTML5 · CSS3 · EdTech · Accessibility · Technical Writing
-
-### Links
-
-[Live Demo](https://ai-development-field-guide.vercel.app/)
-
-[View Source](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/AI_Dev-Technical_Doc_Web_Project)
+**[Live demo](https://ai-development-field-guide.vercel.app/)** · **[View source branch](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/AI_Dev-Technical_Doc_Web_Project)**
 
 ---
 
-## 03 — JavaScript Knowledge Quiz
+## Featured: JavaScript Knowledge Quiz
 
-**Educational Technology · JavaScript · Assessment**
+**JavaScript · DOM manipulation · Assessment design · Accessibility**
 
-A ten-question interactive learning application designed to assess and reinforce foundational JavaScript knowledge.
+A ten-question instructional application that combines assessment with immediate explanations and review.
 
-Students receive immediate feedback and explanations while progressing through the assessment.
+Features include:
 
-### Key Features
+- progress tracking
+- immediate answer feedback
+- explanations after submission
+- previous/next navigation
+- locked submitted answers
+- final score and review
+- retake functionality
+- keyboard support
+- accessible feedback states
 
-- Ten-question assessment
-- Category labels
-- Progress tracking
-- Immediate feedback
-- Answer explanations
-- Previous and next navigation
-- Locked submitted answers
-- Final score
-- Answer review
-- Retake functionality
-- Keyboard support
-- Accessible interface
-
-**Technologies:**  
-JavaScript · DOM Manipulation · EdTech · Assessment Design · Accessibility
-
-### Links
-
-[Live Demo](https://javascript-knowledge-quiz.vercel.app/)
-
-[View Source](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Quiz)
+**[Live demo](https://javascript-knowledge-quiz.vercel.app/)** · **[View source branch](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Quiz)**
 
 ---
 
-## 04 — Ada Lovelace: The Poetry of Computation
+## Additional projects
 
-**Interactive Digital History · EdTech · Web Development**
+### Ada Lovelace — The Poetry of Computation
 
-An interactive educational experience exploring Ada Lovelace's contributions to the history of computing.
+Interactive educational experience combining computing history, structured storytelling, responsive design, and accessible navigation.
 
-The project combines historical storytelling, technology education, interactive notes, and responsive web development.
+**[Live demo](https://ada-lovelace-poetry-of-computation.vercel.app/)** · **[Source](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Lovelace_Tribute_Web_Project)**
 
-### Key Features
+### Luma One
 
-- Interactive historical timeline
-- Structured educational content
-- Notes Explorer
-- Explanations of computational concepts
-- Keyboard accessibility
-- Responsive layout
-- Learning-focused information architecture
-- Source and reference section
+Fictional product landing experience featuring finish selection, quantity controls, client-side cart state, mobile navigation, interactive FAQ behavior, and responsive design.
 
-**Technologies:**  
-HTML5 · CSS3 · JavaScript · EdTech · Digital Storytelling · Accessibility
+**[Live demo](https://luma-one-product-landing.vercel.app/)** · **[Source](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Product_Landing-_Page)**
 
-### Links
+### Interactive Balance Sheet
 
-[Live Demo](https://ada-lovelace-poetry-of-computation.vercel.app/)
+Editable financial dashboard with automatic totals, net-worth calculations, debt-to-assets reporting, per-year state, reset controls, and print support.
 
-[View Source](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Lovelace_Tribute_Web_Project)
+**[Live demo](https://interactive-balance-sheet.vercel.app/)** · **[Source](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Balance_Sheet_Project)**
+
+### Palindrome Checker
+
+Accessible text-processing application with normalization, punctuation handling, Unicode-aware comparison, input validation, keyboard support, and example phrases.
+
+**[Live demo](https://palindrome-checker-8xvfm2c62-marsharine-simpsons-projects.vercel.app/)** · **[Source](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Palindrome_Checker)**
 
 ---
 
-## 05 — Luma One
+## Technical toolkit demonstrated here
 
-**Front-End Development · JavaScript · Product UI**
+**Development:** React · TypeScript · JavaScript · HTML5 · CSS3 · Python fundamentals
 
-A fictional interactive e-commerce product experience built around the Luma One smart task lamp.
+**Full stack / data:** Supabase · PostgreSQL concepts · Authentication · Row Level Security · CRUD · Application state
 
-The project demonstrates responsive front-end development and client-side application behavior.
+**Quality:** Vitest · Testing Library · Debugging · Responsive design · Accessibility
 
-### Key Features
+**Workflow:** Git · GitHub · Issues · branches · Pull Requests · Vercel deployment
 
-- Product finish selection
-- Quantity controls
-- Client-side cart state
-- Mobile navigation
-- Interactive FAQ
-- Keyboard interaction
-- Responsive layouts
-- Accessible interface design
-
-**Technologies:**  
-HTML5 · CSS3 · JavaScript · Responsive Design · Application State
-
-### Links
-
-[Live Demo](https://luma-one-product-landing.vercel.app/)
-
-[View Source](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Product_Landing-_Page)
+**Education / communication:** EdTech · curriculum development · assessment design · AI literacy · technical documentation
 
 ---
 
-## 06 — Interactive Balance Sheet
+## Related work
 
-**JavaScript · Financial Dashboard · Application Logic**
+For my curriculum-development work, start with the dedicated **[Computer Science Secondary Curriculum](https://github.com/marsharine-cs/computer-science-secondary-curriculum)** repository. It showcases an original 36-lesson, 7-unit Introduction to Python curriculum for Grades 9–12, including technical QA and selected instructional samples.
 
-An editable financial dashboard that allows users to compare financial information across multiple years.
-
-The application dynamically calculates financial totals and provides immediate feedback as values change.
-
-### Key Features
-
-- Editable assets
-- Editable liabilities
-- Multiple financial years
-- Automatic totals
-- Net-worth calculation
-- Debt-to-assets reporting
-- Per-year application state
-- Reset functionality
-- Print support
-- Positive and negative financial feedback
-- Currency formatting
-- Responsive design
-
-**Technologies:**  
-JavaScript · DOM Manipulation · Application State · Financial Logic · Responsive Design
-
-### Links
-
-[Live Demo](https://interactive-balance-sheet.vercel.app/)
-
-[View Source](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Balance_Sheet_Project)
+For the full-stack assessment application, use the dedicated **[Student Progress Tracker](https://github.com/marsharine-cs/student-progress-tracker)** repository.
 
 ---
 
-## 07 — Palindrome Checker
+## About me
 
-**JavaScript · Text Processing · Accessibility**
+I am a Computer Science and STEM educator with a B.S. in Information Technology & Security, teaching credentials in New Jersey and Florida, AI evaluation experience, and a professional background that includes SaaS and technical support.
 
-An interactive JavaScript application that determines whether text is a palindrome while ignoring capitalization, punctuation, and spacing.
+That mix shapes how I approach software: I care about whether an interface is understandable, whether a workflow holds up when a real user gets stuck, and whether technical explanations are accurate enough for someone to learn from them.
 
-### Key Features
+- **Portfolio:** https://projectsportfolio-nine.vercel.app/
+- **LinkedIn:** https://www.linkedin.com/in/marsharine-a-simpson/
+- **GitHub:** https://github.com/marsharine-cs
 
-- Text normalization
-- Case-insensitive comparison
-- Punctuation handling
-- Unicode-aware processing
-- Input validation
-- Character counter
-- Clear control
-- Example phrases
-- Keyboard support
-- Accessible feedback
-
-**Technologies:**  
-JavaScript · Regular Expressions · Unicode · DOM Manipulation · Accessibility
-
-### Links
-
-[Live Demo](https://palindrome-checker-8xvfm2c62-marsharine-simpsons-projects.vercel.app/)
-
-[View Source](https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Palindrome_Checker)
-
----
-
-# What These Projects Demonstrate
-
-## Build
-
-I create responsive interfaces and interactive applications, including full-stack projects that incorporate authentication, database integration, application state, and deployed web experiences.
-
-## Teach
-
-My education background influences how I organize information, explain technical concepts, design learning experiences, and think about the people using the technology I build.
-
-## Troubleshoot
-
-My technical support and IT background informs a systematic problem-solving process:
-
-**Define the problem → isolate the issue → research → test → validate → document → improve**
-
----
-
-# Technical Toolkit
-
-### Development
-
-React · TypeScript · JavaScript · HTML5 · CSS3 · Python · Git · GitHub
-
-### Full-Stack & Web
-
-Supabase · Authentication · Protected Routes · Database Integration · Application State · Vercel · Responsive Web Design · Accessibility
-
-### Data & Analytics
-
-Excel · Power BI · Tableau · Data Analytics
-
-### Technology
-
-Information Technology · Cybersecurity · SaaS Support · Technical Support · Educational Technology · AI Evaluation
-
-### Currently Developing
-
-Full-Stack Application Development · React Application Architecture · Database-Backed Applications · AI-Powered Applications
-
----
-
-# Education & Credentials
-
-### Bachelor of Science
-**Information Technology & Security**  
-University of Phoenix
-
-### Associate of Arts
-**Elementary Education and Teaching**
-
-### New Jersey
-**CTE Computer Science Technology — Certificate of Eligibility**  
-Grades 9–12
-
-### Florida
-**Computer Science — Statement of Eligibility**  
-K–12
-
----
-
-# Professional Focus
-
-I am particularly interested in opportunities involving:
-
-- Software Engineering
-- Front-End Development
-- Full-Stack Development
-- Computer Science Education
-- S.T.E.M. Education
-- Educational Technology
-- AI Evaluation
-- Technology Training
-- Technical Support
-- IT and Technology Operations
-- Technology-focused instructional roles
-
----
-
-# Connect
-
-### Portfolio
-[projectsportfolio-nine.vercel.app](https://projectsportfolio-nine.vercel.app/)
-
-### LinkedIn
-[linkedin.com/in/marsharine-a-simpson](https://www.linkedin.com/in/marsharine-a-simpson)
-
-### GitHub
-[github.com/marsharine-cs](https://github.com/marsharine-cs)
-
-### Featured Full-Stack Project
-[Student Progress Tracker](https://github.com/marsharine-cs/student-progress-tracker)
-
----
-
-## About This Repository
-
-This repository is intentionally curated to highlight projects most relevant to my current work in **software development, computer science education, educational technology, AI, and technical problem-solving**.
-
-Some larger applications, including the Student Progress Tracker, are maintained in their own dedicated repositories and linked here as featured projects so reviewers can inspect both the live application and source code directly.
-
-Additional projects and experiments may be maintained privately while they are being developed or when they are not directly relevant to my current professional focus.
-
----
-
-**Marsharine A. Simpson**  
-*S.T.E.M. Educator & Technology Professional*
-
-**Build. Teach. Troubleshoot.**
+**Build thoughtfully. Teach clearly. Troubleshoot systematically.**
